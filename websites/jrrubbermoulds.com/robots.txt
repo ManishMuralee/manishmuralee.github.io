@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /blog/page/
+Disallow: /blog/author/
+Sitemap: https://www.jrrubbermoulds.com/sitemap.xml

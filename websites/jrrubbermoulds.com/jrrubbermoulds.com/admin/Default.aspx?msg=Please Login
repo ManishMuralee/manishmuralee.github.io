@@ -1,0 +1,135 @@
+
+
+<html>
+<head>
+<script type=text/javascript> 
+<!--
+if (top.location != self.location) {
+ top.location = self.location.href;
+}
+// --> 
+</script>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link href="textstyle.css" rel="stylesheet" type="text/css">
+<title> Administrator Login</title>
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #48d1cc;
+}
+-->
+</style>
+</head>
+
+<body bgcolor="#48d1cc">
+    <form method="post" action="./Default.aspx?msg=Please+Login" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNjU3MjU5NTUzD2QWAgIBD2QWAgIBDw8WAh4EVGV4dAUMUGxlYXNlIExvZ2luZGRkHAQK0m3Hs2TtM3b5+9djQn6Arls=" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="85BE7DEE" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAARxFP/2WvFrv/EdFV4Sn4L4R1LBKX1P1xh290RQyTesRVwK8/1gnn25OldlRNyIedl0OWarNtHZvueomBCnXS0abfWuHflZNP/bgZRUCJP4chxHcUU=" />
+    <div>
+    <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%" height="100%">
+  <tr>
+    <td width="100%" style="height: 25%" bgcolor="mediumturquoise">
+    <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%" id="AutoNumber6" align="center">
+      <tr>
+          <td colspan="2">
+    <h1 style="text-align: center;font-size: 25px;font-style: normal;font-weight: bold;color: DarkSlateBlue;">
+        JR RUBBERMOULDS - ADMINISTRATOR</h1>              
+          </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+  <tr>
+    <td width="100%" bgcolor="powderblue" style="height: 50%">
+    
+    
+    
+    
+  <div align="center">
+    <center>
+  <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" id="AutoNumber4">
+        
+    <tr>
+      <td width="100%" align="center" >
+  <div align="center">
+    <center>	  
+      <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" id="AutoNumber2" bordercolor="#D0E871">
+          <tr>
+              <td colspan="5" style="text-align: center">
+                  <span id="msg"><b><font color="Red">Please Login</font></b></span></td>
+          </tr>
+        <tr>
+          <td>
+            &nbsp;</td>
+          <td>
+            <img border="0" src="images/adminlock.gif"><br>
+&nbsp;</td>
+          <td width="10">
+            &nbsp;</td>
+          <td>
+            <div align="center">
+              <center>
+            <table border="0" cellpadding="2" style="border-collapse: collapse" bordercolor="#111111" id="AutoNumber5">
+              <tr>
+                <td class="ArialMatter1" >
+                Username</td>
+                <td>
+                    <input name="UserName" type="text" id="UserName" />
+                    &nbsp;
+                    &nbsp;
+                    </td>
+              </tr>
+              <tr>
+                <td class="ArialMatter1" >
+                <p align="left">
+                Password</td>
+                <td>
+                    <input name="Password" type="password" id="Password" />
+                    &nbsp;
+                    &nbsp;
+                    </td>
+              </tr>
+              <tr>
+                <td align="right">
+                <p align="center">
+      </td>
+                <td align="right">
+                <p align="left">
+      <input type="submit" name="btn_login" value="LOGIN >>" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;btn_login&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="btn_login" style="color: #FFFFFF; font-family: Verdana; font-size: 8pt; border: 1px solid #FFFFFF; background-color: Burlywood" /></td>
+              </tr>
+            </table>
+              </center>
+            </div>
+          </td>
+          <td width="50">
+            &nbsp;</td>
+        </tr>
+      </table>
+        </center>
+      </div>
+      </td>
+    </tr>
+    </table>
+    </center>
+</div>
+    </td>
+  </tr>
+  <tr>
+    <td width="100%" style="height: 25%" bgcolor="mediumturquoise">
+   
+    </td>
+  </tr>
+</table>
+    </div>
+    </form>
+</body>
+</html>
