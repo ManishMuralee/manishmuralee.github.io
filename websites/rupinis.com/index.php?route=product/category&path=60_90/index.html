@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en" xml:lang="en">
+<head>
+<title>Rupinis Package</title>
+<base href="http://www.rupinis.com/" />
+<link href="http://www.rupinis.com/image/data/cart.png" rel="icon" />
+<link rel="stylesheet" type="text/css" href="catalog/view/theme/rupinis/stylesheet/stylesheet.css" />
+<script type="text/javascript" src="catalog/view/javascript/jquery/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="catalog/view/javascript/jquery/ui/jquery-ui-1.8.16.custom.min.js"></script>
+<link rel="stylesheet" type="text/css" href="catalog/view/javascript/jquery/ui/themes/ui-lightness/jquery-ui-1.8.16.custom.css" />
+<script type="text/javascript" src="catalog/view/javascript/jquery/ui/external/jquery.cookie.js"></script>
+<script type="text/javascript" src="catalog/view/javascript/jquery/colorbox/jquery.colorbox.js"></script>
+<link rel="stylesheet" type="text/css" href="catalog/view/javascript/jquery/colorbox/colorbox.css" media="screen" />
+<script type="text/javascript" src="catalog/view/javascript/jquery/tabs.js"></script>
+<script type="text/javascript" src="catalog/view/javascript/common.js"></script>
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="catalog/view/theme/rupinis/stylesheet/ie7.css" />
+<![endif]-->
+<!--[if lt IE 7]>
+<link rel="stylesheet" type="text/css" href="catalog/view/theme/rupinis/stylesheet/ie6.css" />
+<script type="text/javascript" src="catalog/view/javascript/DD_belatedPNG_0.0.8a-min.js"></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('#logo img');
+</script>
+<![endif]-->
+</head>
+<body>
+<div id="container">
+<div id="wrapper">
+<!--<div id="header">
+    <div id="logo"><a href="http://www.rupinis.com/index.php?route=common/home"><img src="http://www.rupinis.com/image/data/logo.gif" title="Rupinis" alt="Rupinis" /></a></div>
+      <form action="http://www.rupinis.com/index.php?route=module/currency" method="post" enctype="multipart/form-data">
+  <div id="currency">
+  	<a href="#">Currency</a>
+    <div id="currency-option">
+                <a title="Pound Sterling" onclick="$('input[name=\'currency_code\']').attr('value', 'GBP'); $(this).parent().parent().submit();">£</a>
+                        <a title="SG Dollar"><b>$</b></a>
+                <input type="hidden" name="currency_code" value="" />
+    <input type="hidden" name="redirect" value="http://www.rupinis.com/index.php?route=product/category&amp;path=60_90" />
+    </div>
+  </div>
+</form>
+  <div id="cart">
+  <div class="heading">
+    <h4>Cart</h4>
+    <a><span id="cart-total"></span></a></div>
+  <div class="content">
+        <div class="empty">Your shopping cart is empty!</div>
+      </div>
+</div>  <div id="search">
+    <div class="button-search"></div>
+        <input type="text" name="filter_name" value="Search" onclick="this.value = '';" onkeydown="this.style.color = '#000000';" />
+      </div>
+  <div id="welcome">
+        Welcome visitor you can <a href="http://www.rupinis.com/index.php?route=account/login">login</a> or <a href="http://www.rupinis.com/index.php?route=account/register">create an account</a>.      </div>
+  <div class="links"><a href="http://www.rupinis.com/index.php?route=common/home">Home</a><a href="http://www.rupinis.com/index.php?route=account/wishlist" id="wishlist-total">Wish List (0)</a><a href="http://www.rupinis.com/index.php?route=account/account">My Account</a><a href="http://www.rupinis.com/index.php?route=checkout/cart">Shopping Cart</a><a href="http://www.rupinis.com/index.php?route=checkout/checkout">Checkout</a></div>
+</div>-->
+<div id="header">
+    <div id="logo"><a href="http://www.rupinis.com/index.php?route=common/home"><img src="http://www.rupinis.com/image/data/logo.gif" title="Rupinis" alt="Rupinis" /></a></div>
+      <div id="header-right">
+        <div class="cart-text"><div id="cart">
+  <div class="heading">
+    <h4>Cart</h4>
+    <a><span id="cart-total"></span></a></div>
+  <div class="content">
+        <div class="empty">Your shopping cart is empty!</div>
+      </div>
+</div></div>
+        <div id="search">
+                <input type="text" name="filter_name" value="Search" onclick="this.value = '';" onkeydown="this.style.color = '#fff';" class="user"/>
+                <a href="#"><img src="catalog/view/theme/rupinis/image/search-button.gif" alt="" /></a></div>
+        <div class="header-link">
+        	<a href="http://www.rupinis.com/index.php?route=common/home">Home</a>|<a href="http://www.rupinis.com/index.php?route=account/wishlist" id="wishlist-total">Wish List (0)</a>|<a href="http://www.rupinis.com/index.php?route=account/account">My Account</a>|<a href="http://www.rupinis.com/index.php?route=checkout/cart">Shopping Cart</a>|<a href="http://www.rupinis.com/index.php?route=checkout/checkout">Checkout</a>
+        </div>
+    </div>
+</div>  
+<div id="menu-bar">
+		<div class="menu-left"></div>
+		<div class="menu-middle">
+			<div id="top-menu">
+				<ul>
+                	<li><a href="index.php">Home</a></li>
+					<li><a class="active-left" href="index.php?route=information/information&information_id=4">About Us</a></li>
+					<li><a href="index.php?route=information/information&information_id=21">Founder</a></li>
+					<li><a href="index.php?route=information/information&information_id=22">Brands</a></li>
+					<!--<li><a href="#">Estore</a></li>-->
+					<li><a href="index.php?route=information/information&information_id=20">Promotions</a></li>
+					<li><a href="index.php?route=common/locations">Location</a></li>
+					<li class="end"><a href="index.php?route=information/contact">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="menu-right"></div>
+	</div>
+<div id="notification"></div>
+<div id="column-left">
+    <div class="box site-bg">
+<div class="top-left-bg"></div>
+<div class="top-right-bg"></div>
+<div class="bottom-left-bg"></div>
+<div class="bottom-right-bg"></div>
+  <div class="box-heading">Rupinis</div>
+  <div class="box-content">
+    <div class="box-category">
+      <ul>
+      			 <li>
+        		<a href="index.php?route=product/category/information&path=60&informattion_id=21">About Founder</a>
+        </li>
+      	        	<li>
+            	<a href="http://www.rupinis.com/index.php?route=product/category/information&amp;path=60&amp;informattion_id=8">About Rupinis</a>
+            </li>
+                        <li>
+        		<a href="index.php?route=product/category/location&path=60">Location</a>
+        </li>
+                        <li>
+                    <a href="http://www.rupinis.com/index.php?route=product/category&amp;path=60_87">Divine</a>
+                  </li>
+                <li>
+                    <a href="http://www.rupinis.com/index.php?route=product/category&amp;path=60_90">Rupinis Package</a>
+                  </li>
+                <li>
+                    <a href="http://www.rupinis.com/index.php?route=product/category&amp;path=60_59">Rupinis Services</a>
+                  </li>
+                       </ul>
+    </div>
+  </div>
+</div>
+  </div>
+ 
+<div id="content" class="site-bg">
+<div class="top-left-bg"></div>
+<div class="top-right-bg"></div>
+<div class="bottom-left-bg"></div>
+<div class="bottom-right-bg"></div>  <div class="breadcrumb">
+        <a href="http://www.rupinis.com/index.php?route=common/home">Home</a>
+         &raquo; <a href="http://www.rupinis.com/index.php?route=product/category&amp;path=60">Rupinis</a>
+         &raquo; <a href="http://www.rupinis.com/index.php?route=product/category&amp;path=60_90">Rupinis Package</a>
+      </div>
+  <h1>Rupinis Package</h1>
+     <!-- <h2>Refine Search</h2>-->
+  <div class="category-list">
+                <ul>
+      <li>
+      	        <a href="http://www.rupinis.com/index.php?route=product/category&amp;path=60_90_91"><img  src="http://www.rupinis.com/image/cache/data/packages/RP-browcard-80x80-80x80.jpg" /></a>
+              </li>
+      <li><a href="http://www.rupinis.com/index.php?route=product/category&amp;path=60_90_91">BrowGurus (1)</a></li>
+      </ul>
+            <ul>
+      <li>
+      	        <a href="http://www.rupinis.com/index.php?route=product/category&amp;path=60_90_92"><img  src="http://www.rupinis.com/image/cache/data/packages/RP-valuepackageicon-80x80-80x80.jpg" /></a>
+              </li>
+      <li><a href="http://www.rupinis.com/index.php?route=product/category&amp;path=60_90_92">PackageCard (2)</a></li>
+      </ul>
+          </ul>
+      </div>
+      <div class="product-filter">
+    <!--<div class="display"><b>Display:</b> List <b>/</b> <a onclick="display('grid');">Grid</a></div>-->
+    <div class="limit"><b>Show:</b>
+      <select onchange="location = this.value;">
+                        <option value="http://www.rupinis.com/index.php?route=product/category&amp;path=60_90&amp;limit=20" selected="selected">20</option>
+                                <option value="http://www.rupinis.com/index.php?route=product/category&amp;path=60_90&amp;limit=25">25</option>
+                                <option value="http://www.rupinis.com/index.php?route=product/category&amp;path=60_90&amp;limit=50">50</option>
+                                <option value="http://www.rupinis.com/index.php?route=product/category&amp;path=60_90&amp;limit=75">75</option>
+                                <option value="http://www.rupinis.com/index.php?route=product/category&amp;path=60_90&amp;limit=100">100</option>
+                      </select>
+    </div>
+    <div class="sort"><b>Sort By:</b>
+      <select onchange="location = this.value;">
+                        <option value="http://www.rupinis.com/index.php?route=product/category&amp;path=60_90&amp;sort=p.sort_order&amp;order=ASC" selected="selected">Default</option>
+                                <option value="http://www.rupinis.com/index.php?route=product/category&amp;path=60_90&amp;sort=pd.name&amp;order=ASC">Name (A - Z)</option>
+                                <option value="http://www.rupinis.com/index.php?route=product/category&amp;path=60_90&amp;sort=pd.name&amp;order=DESC">Name (Z - A)</option>
+                                <option value="http://www.rupinis.com/index.php?route=product/category&amp;path=60_90&amp;sort=p.price&amp;order=ASC">Price (Low &gt; High)</option>
+                                <option value="http://www.rupinis.com/index.php?route=product/category&amp;path=60_90&amp;sort=p.price&amp;order=DESC">Price (High &gt; Low)</option>
+                                <option value="http://www.rupinis.com/index.php?route=product/category&amp;path=60_90&amp;sort=rating&amp;order=DESC">Rating (Highest)</option>
+                                <option value="http://www.rupinis.com/index.php?route=product/category&amp;path=60_90&amp;sort=rating&amp;order=ASC">Rating (Lowest)</option>
+                                <option value="http://www.rupinis.com/index.php?route=product/category&amp;path=60_90&amp;sort=p.model&amp;order=ASC">Model (A - Z)</option>
+                                <option value="http://www.rupinis.com/index.php?route=product/category&amp;path=60_90&amp;sort=p.model&amp;order=DESC">Model (Z - A)</option>
+                      </select>
+    </div>
+  </div>
+  <div class="product-compare"><a href="http://www.rupinis.com/index.php?route=product/compare" id="compare-total">Product Compare (0)</a></div>
+  <div class="product-list">
+        <div>
+            <div class="image"><a href="http://www.rupinis.com/index.php?route=product/product&amp;path=60_90&amp;product_id=435"><img src="http://www.rupinis.com/image/cache/data/promotions/WWC-80x80.png" title="MONKEY MADNESS CLUB PKG / $388 for $500 Worth of Service Value" alt="MONKEY MADNESS CLUB PKG / $388 for $500 Worth of Service Value" /></a></div>
+           
+      <div class="name"><a href="http://www.rupinis.com/index.php?route=product/product&amp;path=60_90&amp;product_id=435">MONKEY MADNESS CLUB PKG / $388 for $500 Worth of Service Value</a></div>
+      <div class="description">
+	$388 MONKEY MADNESS CLUB PKG
+
+	PAY $388 YOU WILL GET $500 WORTH OF SERVICES
+..</div>
+      
+                    <div class="price">
+                        $388.00                                    <br />
+            <span class="price-tax">Ex Tax: $388.00</span>
+                      </div>
+                
+             <!-- new code for hide RAGU-->
+          <div class="cart">
+            <input type="button" value="Add to Cart" onclick="addToCart('435');" class="button" />
+          </div>
+          <div class="wishlist"><a onclick="addToWishList('435');">Add to Wish List</a></div>
+          <div class="compare"><a onclick="addToCompare('435');">Add to Compare</a></div>
+      <!-- new code for hide RAGU-->
+    </div>
+        <div>
+            <div class="image"><a href="http://www.rupinis.com/index.php?route=product/product&amp;path=60_90&amp;product_id=414"><img src="http://www.rupinis.com/image/cache/data/products/RP-browcardthreading-228x228-80x80.jpg" title="THREADING PREPAID CARD / $100.00 for $140 worth of value - Use all kind of threading" alt="THREADING PREPAID CARD / $100.00 for $140 worth of value - Use all kind of threading" /></a></div>
+           
+      <div class="name"><a href="http://www.rupinis.com/index.php?route=product/product&amp;path=60_90&amp;product_id=414">THREADING PREPAID CARD / $100.00 for $140 worth of value - Use all kind of threading</a></div>
+      <div class="description">
+	THREADING PREPAID CARD / $100.00 for $140 worth of value - Use all kind of threading
+..</div>
+      
+                    <div class="price">
+                        $100.00                                    <br />
+            <span class="price-tax">Ex Tax: $100.00</span>
+                      </div>
+                
+             <!-- new code for hide RAGU-->
+          <div class="cart">
+            <input type="button" value="Add to Cart" onclick="addToCart('414');" class="button" />
+          </div>
+          <div class="wishlist"><a onclick="addToWishList('414');">Add to Wish List</a></div>
+          <div class="compare"><a onclick="addToCompare('414');">Add to Compare</a></div>
+      <!-- new code for hide RAGU-->
+    </div>
+      </div>
+  <div class="pagination"><div class="results">Showing 1 to 2 of 2 (1 Pages)</div></div>
+      </div>
+<script type="text/javascript"><!--
+function display(view) {
+	if (view == 'list') {
+		$('.product-grid').attr('class', 'product-list');
+		
+		$('.product-list > div').each(function(index, element) {
+			html  = '<div class="right">';
+			html += '  <div class="cart">' + $(element).find('.cart').html() + '</div>';
+			html += '  <div class="wishlist">' + $(element).find('.wishlist').html() + '</div>';
+			html += '  <div class="compare">' + $(element).find('.compare').html() + '</div>';
+			html += '</div>';			
+			
+			html += '<div class="left">';
+			
+			var image = $(element).find('.image').html();
+			
+			if (image != null) { 
+				html += '<div class="image">' + image + '</div>';
+			}
+			
+			var price = $(element).find('.price').html();
+			
+			if (price != null) {
+				html += '<div class="price">' + price  + '</div>';
+			}
+					
+			html += '  <div class="name">' + $(element).find('.name').html() + '</div>';
+			html += '  <div class="description">' + $(element).find('.description').html() + '</div>';
+			
+			var rating = $(element).find('.rating').html();
+			
+			if (rating != null) {
+				html += '<div class="rating">' + rating + '</div>';
+			}
+				
+			html += '</div>';
+
+						
+			$(element).html(html);
+		});		
+		
+		$('.display').html('<b>Display:</b> List <b>/</b> <a onclick="display(\'grid\');">Grid</a>');
+		
+		$.cookie('display', 'list'); 
+	} else {
+		$('.product-list').attr('class', 'product-grid');
+		
+		$('.product-grid > div').each(function(index, element) {
+			html = '';
+			
+			var image = $(element).find('.image').html();
+			
+			if (image != null) {
+				html += '<div class="image">' + image + '</div>';
+			}
+			
+			html += '<div class="name">' + $(element).find('.name').html() + '</div>';
+			html += '<div class="description">' + $(element).find('.description').html() + '</div>';
+			
+			var price = $(element).find('.price').html();
+			
+			if (price != null) {
+				html += '<div class="price">' + price  + '</div>';
+			}
+			
+			var rating = $(element).find('.rating').html();
+			
+			if (rating != null) {
+				html += '<div class="rating">' + rating + '</div>';
+			}
+			var hideVar = "";
+			if(hideVar!='yes'){			
+				html += '<div class="cart">' + $(element).find('.cart').html() + '</div>';
+				html += '<div class="wishlist">' + $(element).find('.wishlist').html() + '</div>';
+				html += '<div class="compare">' + $(element).find('.compare').html() + '</div>';
+			   $(element).html(html);
+			}
+		});	
+					
+		$('.display').html('<b>Display:</b> <a onclick="display(\'list\');">List</a> <b>/</b> Grid');
+		
+		$.cookie('display', 'grid');
+	}
+}
+
+view = $.cookie('display');
+
+if (view) {
+	display(view);
+} else {
+	display('grid');
+}
+//--></script> 
+<div id="footer-bar">
+		<div class="footer-top"></div>
+		<div class="footer-middle">
+			<div id="bottom-footer">
+				<a href="index.php" class="active">Home</a>|
+				<a href="index.php?route=information/information&information_id=4">About</a>|
+				<a href="index.php?route=information/information&information_id=21">Founder</a>|
+				<a href="index.php?route=information/information&information_id=22">Brands</a>|
+				<a href="index.php?route=information/information&information_id=20">Promotions</a>|
+				<a href="index.php?route=common/locations">Location</a>|
+				<a href="index.php?route=information/contact">Contact Us</a>
+				<p>&copy; Copyright 2012. All Right Reserved.</p>
+			</div>
+			<div class="follow-us">Follow Us<a href="https://twitter.com/#!/rupinisbeauty" target="_blank"><img alt="" src="catalog/view/theme/rupinis/image/t.png"></a><a href="http://www.youtube.com/user/rupinisbeauty" target="_blank"><img alt="" src="catalog/view/theme/rupinis/image/youtube-icon.png"></a><a href="http://www.facebook.com/pages/Rupinis-Beauty-Consultant/188248754552562" target="_blank"><img alt="" src="catalog/view/theme/rupinis/image/f.png"></a>
+			</div>
+			<div class="powered-text">Powered by <a href="http://www.oclocksoftware.com">OCS</a></div>
+		</div>
+		<div class="footer-bottom"></div>
+    </div>
+<!--
+OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.
+Please donate via PayPal to donate@opencart.com
+//-->
+<div id="powered"></div>
+<!--
+OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.
+Please donate via PayPal to donate@opencart.com
+//-->
+</div>
+</div>
+</body></html>

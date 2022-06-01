@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en" xml:lang="en">
+<head>
+<title></title>
+<base href="http://www.rupinis.com/" />
+<link href="http://www.rupinis.com/image/data/cart.png" rel="icon" />
+<link rel="stylesheet" type="text/css" href="catalog/view/theme/rupinis/stylesheet/stylesheet.css" />
+<script type="text/javascript" src="catalog/view/javascript/jquery/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="catalog/view/javascript/jquery/ui/jquery-ui-1.8.16.custom.min.js"></script>
+<link rel="stylesheet" type="text/css" href="catalog/view/javascript/jquery/ui/themes/ui-lightness/jquery-ui-1.8.16.custom.css" />
+<script type="text/javascript" src="catalog/view/javascript/jquery/ui/external/jquery.cookie.js"></script>
+<script type="text/javascript" src="catalog/view/javascript/jquery/colorbox/jquery.colorbox.js"></script>
+<link rel="stylesheet" type="text/css" href="catalog/view/javascript/jquery/colorbox/colorbox.css" media="screen" />
+<script type="text/javascript" src="catalog/view/javascript/jquery/tabs.js"></script>
+<script type="text/javascript" src="catalog/view/javascript/common.js"></script>
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="catalog/view/theme/rupinis/stylesheet/ie7.css" />
+<![endif]-->
+<!--[if lt IE 7]>
+<link rel="stylesheet" type="text/css" href="catalog/view/theme/rupinis/stylesheet/ie6.css" />
+<script type="text/javascript" src="catalog/view/javascript/DD_belatedPNG_0.0.8a-min.js"></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('#logo img');
+</script>
+<![endif]-->
+</head>
+<body>
+<div id="container">
+<div id="wrapper">
+<!--<div id="header">
+    <div id="logo"><a href="http://www.rupinis.com/index.php?route=common/home"><img src="http://www.rupinis.com/image/data/logo.gif" title="Rupinis" alt="Rupinis" /></a></div>
+      <form action="http://www.rupinis.com/index.php?route=module/currency" method="post" enctype="multipart/form-data">
+  <div id="currency">
+  	<a href="#">Currency</a>
+    <div id="currency-option">
+                <a title="Pound Sterling" onclick="$('input[name=\'currency_code\']').attr('value', 'GBP'); $(this).parent().parent().submit();">£</a>
+                        <a title="SG Dollar"><b>$</b></a>
+                <input type="hidden" name="currency_code" value="" />
+    <input type="hidden" name="redirect" value="http://www.rupinis.com/index.php?route=product/category/information&amp;path=60&amp;informattion_id=21" />
+    </div>
+  </div>
+</form>
+  <div id="cart">
+  <div class="heading">
+    <h4>Cart</h4>
+    <a><span id="cart-total"></span></a></div>
+  <div class="content">
+        <div class="empty">Your shopping cart is empty!</div>
+      </div>
+</div>  <div id="search">
+    <div class="button-search"></div>
+        <input type="text" name="filter_name" value="Search" onclick="this.value = '';" onkeydown="this.style.color = '#000000';" />
+      </div>
+  <div id="welcome">
+        Welcome visitor you can <a href="http://www.rupinis.com/index.php?route=account/login">login</a> or <a href="http://www.rupinis.com/index.php?route=account/register">create an account</a>.      </div>
+  <div class="links"><a href="http://www.rupinis.com/index.php?route=common/home">Home</a><a href="http://www.rupinis.com/index.php?route=account/wishlist" id="wishlist-total">Wish List (0)</a><a href="http://www.rupinis.com/index.php?route=account/account">My Account</a><a href="http://www.rupinis.com/index.php?route=checkout/cart">Shopping Cart</a><a href="http://www.rupinis.com/index.php?route=checkout/checkout">Checkout</a></div>
+</div>-->
+<div id="header">
+    <div id="logo"><a href="http://www.rupinis.com/index.php?route=common/home"><img src="http://www.rupinis.com/image/data/logo.gif" title="Rupinis" alt="Rupinis" /></a></div>
+      <div id="header-right">
+        <div class="cart-text"><div id="cart">
+  <div class="heading">
+    <h4>Cart</h4>
+    <a><span id="cart-total"></span></a></div>
+  <div class="content">
+        <div class="empty">Your shopping cart is empty!</div>
+      </div>
+</div></div>
+        <div id="search">
+                <input type="text" name="filter_name" value="Search" onclick="this.value = '';" onkeydown="this.style.color = '#fff';" class="user"/>
+                <a href="#"><img src="catalog/view/theme/rupinis/image/search-button.gif" alt="" /></a></div>
+        <div class="header-link">
+        	<a href="http://www.rupinis.com/index.php?route=common/home">Home</a>|<a href="http://www.rupinis.com/index.php?route=account/wishlist" id="wishlist-total">Wish List (0)</a>|<a href="http://www.rupinis.com/index.php?route=account/account">My Account</a>|<a href="http://www.rupinis.com/index.php?route=checkout/cart">Shopping Cart</a>|<a href="http://www.rupinis.com/index.php?route=checkout/checkout">Checkout</a>
+        </div>
+    </div>
+</div>  
+<div id="menu-bar">
+		<div class="menu-left"></div>
+		<div class="menu-middle">
+			<div id="top-menu">
+				<ul>
+                	<li><a href="index.php">Home</a></li>
+					<li><a class="active-left" href="index.php?route=information/information&information_id=4">About Us</a></li>
+					<li><a href="index.php?route=information/information&information_id=21">Founder</a></li>
+					<li><a href="index.php?route=information/information&information_id=22">Brands</a></li>
+					<!--<li><a href="#">Estore</a></li>-->
+					<li><a href="index.php?route=information/information&information_id=20">Promotions</a></li>
+					<li><a href="index.php?route=common/locations">Location</a></li>
+					<li class="end"><a href="index.php?route=information/contact">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="menu-right"></div>
+	</div>
+<div id="notification"></div>
+<div id="column-left">
+    <div class="box site-bg">
+<div class="top-left-bg"></div>
+<div class="top-right-bg"></div>
+<div class="bottom-left-bg"></div>
+<div class="bottom-right-bg"></div>
+  <div class="box-heading">Rupinis</div>
+  <div class="box-content">
+    <div class="box-category">
+      <ul>
+      			 <li>
+        		<a href="index.php?route=product/category/information&path=60&informattion_id=21">About Founder</a>
+        </li>
+      	        	<li>
+            	<a href="http://www.rupinis.com/index.php?route=product/category/information&amp;path=60&amp;informattion_id=8">About Rupinis</a>
+            </li>
+                        <li>
+        		<a href="index.php?route=product/category/location&path=60">Location</a>
+        </li>
+                        <li>
+                    <a href="http://www.rupinis.com/index.php?route=product/category&amp;path=60_87">Divine</a>
+                  </li>
+                <li>
+                    <a href="http://www.rupinis.com/index.php?route=product/category&amp;path=60_90">Rupinis Package</a>
+                  </li>
+                <li>
+                    <a href="http://www.rupinis.com/index.php?route=product/category&amp;path=60_59">Rupinis Services</a>
+                  </li>
+                       </ul>
+    </div>
+  </div>
+</div>
+  </div>
+ 
+<div id="content" class="site-bg">
+<div class="top-left-bg"></div>
+<div class="top-right-bg"></div>
+<div class="bottom-left-bg"></div>
+<div class="bottom-right-bg"></div>  <div class="breadcrumb">
+        <a href="http://www.rupinis.com/index.php?route=common/home">Home</a>
+         &raquo; <a href="http://www.rupinis.com/index.php?route=product/category&amp;path=60">Rupinis</a>
+      </div>
+  <h1>Founder</h1>
+  <p>
+  	<p>
+	<img align="left" alt="" src="http://www.911websolutions.com/rupinisweb/image/data/sivarani.png" style="padding:15px" /></p>
+<h2>
+	About Rupini’s Founder</h2>
+<p>
+	The name “Rupini” means “beauty” in Tamil which is also happened to be her daughter’s name. Ms Sivarani, the founder forged her way to success, armed with determination and good head knowledge of beauty secrets.</p>
+<h2>
+	The Beginning</h2>
+<p>
+	Rupini’s was first established on 2nd October 1994 as a sole proprietorship. It was then known as Rupini’s Beauty &amp; Bridal salon at Yishun. The primary business of the company is to provide a wide range of bridal and beauty services. In 1997, it became a private limited company and changed its name to Rupini’s Beauty Consultant Pte Ltd.</p>
+<p>
+	It was never a bed of roses for her from the start. First and foremost, Sivarani chose to become a beautician at that time, a trade which was considered unglamorous and demeaning to the Indian community. It took a lot courage and determination for her to convince her parents. She wanted to bring the concept of beauty to a totally different height with the community. To do that, she had to learn all about the beauty trade. So much so, she had to leave her family and travelled to India to take up beauty courses. This needed much discipline and courage on her part as it was never easy for a woman to travel alone.</p>
+<p>
+	The next step was to open own salon and she knew it was an uphill task. As the saying goes, “God only help those who help themselves.” For her, her help came in the form of her father. Her father had just retired and has SGD 30 000 in his account. He gave it all to Sivarani; knowing it would not go to waste and with the belief she would become some great in life. Knowing the value of hard earned money, she determined to achieve the realization of her dream and that of her father’s.</p>
+<p>
+	Sivarani opened her first Rupini’s outlet in Yishun in 1994. At that time, it was unheard for an Indian beauty salon to exist among the stiff competition of already established salons in the suburbs. She knew she could not afford to hire any staff and thus she had to work alone. Despite this, she was even more fervent to strive through it all on her own until her goal achieved.</p>
+<p>
+	Advertisement was a luxurious tool that she could not afford. She handed out flyers with the help of her friends and family from door to door. Through her hard work coupling with her excellent customer service skill, it paid off with customers pouring into her Yishun salon. She realized that she would need a larger salon to cater to the crowd. With much hesitation, she closed her Yishun salon and moved to Serangoon Road, the very heart of the Indian community. She employed 6 new staff to assist her with manning the salon. This move boosted her morale further and inspired her to be a trendsetter and style icon for fashion conscious ladies to emulate.</p>
+  </p>
+  </div>
+<div id="footer-bar">
+		<div class="footer-top"></div>
+		<div class="footer-middle">
+			<div id="bottom-footer">
+				<a href="index.php" class="active">Home</a>|
+				<a href="index.php?route=information/information&information_id=4">About</a>|
+				<a href="index.php?route=information/information&information_id=21">Founder</a>|
+				<a href="index.php?route=information/information&information_id=22">Brands</a>|
+				<a href="index.php?route=information/information&information_id=20">Promotions</a>|
+				<a href="index.php?route=common/locations">Location</a>|
+				<a href="index.php?route=information/contact">Contact Us</a>
+				<p>&copy; Copyright 2012. All Right Reserved.</p>
+			</div>
+			<div class="follow-us">Follow Us<a href="https://twitter.com/#!/rupinisbeauty" target="_blank"><img alt="" src="catalog/view/theme/rupinis/image/t.png"></a><a href="http://www.youtube.com/user/rupinisbeauty" target="_blank"><img alt="" src="catalog/view/theme/rupinis/image/youtube-icon.png"></a><a href="http://www.facebook.com/pages/Rupinis-Beauty-Consultant/188248754552562" target="_blank"><img alt="" src="catalog/view/theme/rupinis/image/f.png"></a>
+			</div>
+			<div class="powered-text">Powered by <a href="http://www.oclocksoftware.com">OCS</a></div>
+		</div>
+		<div class="footer-bottom"></div>
+    </div>
+<!--
+OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.
+Please donate via PayPal to donate@opencart.com
+//-->
+<div id="powered"></div>
+<!--
+OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.
+Please donate via PayPal to donate@opencart.com
+//-->
+</div>
+</div>
+</body></html>

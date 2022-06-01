@@ -1,0 +1,48 @@
+body{
+  background:none !important;
+  color:#000000;
+  font-size:12pt;
+}
+
+#masthead .site-branding{
+  max-width:100%;
+}
+
+#page a:after{
+  content:"";
+}
+
+.has-sidebar .content-area{
+  width:100%;
+}
+
+#masthead .top-bar .header-custom-text{
+  max-width:100%;
+}
+
+#toggle-sidebar,
+#secondary,
+#site-navigation,
+#secondary-navigation,
+.author-container,
+.sidebar-section,
+#comments,
+#colophon,
+.sharedaddy,
+.jp-relatedposts,
+.post-navigation,
+.entry-footer,
+.mejs-container,
+.wp-playlist,
+#masthead .top-bar .search-form,
+#masthead .top-bar .header-social-menu,
+.hentry .entry-header .comments-link{
+  display:none;
+}
+
+.single .hentry,
+.has-sidebar .site-main{
+  border:none;
+  margin:0;
+  padding:0;
+}

@@ -1,0 +1,443 @@
+ <!DOCTYPE html><html lang="en">    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />    <head>        <meta charset="utf-8">        <meta http-equiv="X-UA-Compatible" content="IE=edge">        <meta name="viewport" content="width=device-width, initial-scale=1">        <link rel="shortcut icon" href="http://www.remedio.in/public/user/images/fav.png" type="png">                    <title>remedio.in |Remedio Pharmaceuticals</title>            <meta name="description" content="">            <meta name="keywords" content=""/>                <link href="http://www.remedio.in/public/user/bootstrap/css/bootstrap.css" rel="stylesheet">        <!-- Plugins -->        <link href="http://www.remedio.in/public/user/css/font-awesome.css" rel="stylesheet">        <link href="http://www.remedio.in/public/user/css/bootstrap-select.css" rel="stylesheet">        <link href="http://www.remedio.in/public/user/css/owl.carousel.css" rel="stylesheet">        <link href="http://www.remedio.in/public/user/css/owl.theme.default.css" rel="stylesheet">        <link href="http://www.remedio.in/public/user/wowk/wkstyles/wk-css-bundle.css" rel="stylesheet">        <script src="http://www.remedio.in/public/user/js/jquery.js"></script>        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.css">        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.min.js"></script>        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->        <!--[if lt IE 9]>        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>        <![endif]-->    </head>    <noscript>    <p style="    display: block;        text-align: center;        border: 1px solid;        color: red;        position: fixed;        z-index: 9999999;        width: 100%;        background: black;        color: white;        top: 30%;        padding: 100px;        font-size: 40px;        ">        <span style="font-size: 18px;">Warning!!!</span><br>        Sorry, your browser does not support JavaScript! <br>        <span style="font-size: 16px;">*******  Please Enable JavaScript for better experience!  *******</span> <br>        <span style="font-size: 16px;">Remedio</span></p>        <style type="text/css">body {        filter: grayscale(100%);        }    </style>        </noscript>        <style >              .mob-cartda{display: none;} .mob-cartda a{background-color: #1fbd7b;color: white;padding: 12px 10px;border-radius: 50%;position: fixed;right: 1px;top: 350px;z-index: 9999;box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.21);}        @media(max-width: 767px){.mob-cartda{display: block !important;}.cart_empty_image img {width: 100%;}}        #loading {position: fixed;left: 0px;top: 0px;width: 100%;height: 100%;z-index: 9999999;background: url(http://www.remedio.in/public/img/homeload1.gif) 50% 50% no-repeat #ffffff;}                </style>        <body class="fade-down">            <!-- header -->            <div id="loading"></div>            <div class="headerimport" id="headeromport">                <div class="top-header ">                    <div class="container">                        <div class="row">                            <div class="col-xs-12">                               <span class="hidden-lg hidden-md hidden-sm">  <a href="http://www.remedio.in/" style="padding: 10px 7px;color: white;display: inline-block;"> <i class="fa fa-home" aria-hidden="true"></i> Home</a></span>                                <ul class="list-inline pull-right ww-olot_Ff7">                                                                        <li class="loginloginpage">                                        <div class="dropdown">                                            <button class="btn dropdown-toggle reginfo" type="button"                                            data-toggle="modal" data-target="#loginorregisetr" role="button"                                            onclick="wanttoregister()">                                            <i class="fa fa-sign-in" aria-hidden="true"></i> Login / Register                                            </button>                                        </div>                                    </li>                                                                        <li class="hidden-xs"><a href="http://www.remedio.in/Home/myprofile" class="suportprofile"><i class="fa fa-phone-square" aria-hidden="true"></i> 24x7 Customer Care</a></li>                                    <li class="hidden-xs"><a href="http://www.remedio.in/Home/myprofile" class="trackorderTOprofile" ><i class="fa fa-truck" aria-hidden="true"></i> Track Order</a></li>                                </ul>                                <ul class="list-inline pull-left ww-olot_Ff7">                                    <li class="hidden-xs"><a href="http://www.remedio.in/" class="atv"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li><!--                                    <li class="hidden-xs">--><!--                                        <a href="--><!--" class="atv_wowqt">--><!--                                             <i class="fa fa-home_ele" aria-hidden="true"><img src="https://i.giphy.com/qspo3i5S7Or4Y.gif"></i> --><!--                                        Kerala's Fastest Online Pharmacy</a></li>-->                                    </ul>                                </div>                            </div>                        </div>                    </div>                    <div class="middle-header">                        <div class="container">                            <div class="row">                                                                   <div class="col-md-2 col-sm-12 col-xs-12 logo logoheadnomobile">                                    <a href="http://www.remedio.in/"><img alt="Logo" src="http://www.remedio.in/assets/home_images/rem.png" class="img-responsivelogo-wow" data-text-logo="remedio.in" /></a>                                </div>                                                               <form action="http://www.remedio.in/Home/searchproducts" method="post" accept-charset="utf-8">
+                                <div class="col-sm-8 col-md-7  col-xs-12 search-box m-t-3">                                    <div class="input-group">                                        <div class="frmSearch">                                            <input type="text" autocomplete="off" name="" class="form-control search-input ww-olot_Ff6" required="required" id="searchresult" aria-label="Search Your Item..." placeholder="Search Your Item...">                                            <div id="suggesstion-box">                                            </div>                                        </div>                                        <div class="input-group-btn">                                            <input type="text" id="segg_names" name="searchresult" style="border:0px !important;">                                            <button type="submit" class="btn btn-default btn-search"><i class="fa fa-search"></i></button>                                        </div>                                    </div>                                </div>                                </form>                                                                 </div>                            </div>                        </div>                        <nav class="navbar navbar-default shadow-navbar" role="navigation">                            <div class="container">                                <div class="navbar-header">                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-ex1-collapse">                                    <span class="sr-only">Toggle navigation</span>                                    <span class="icon-bar"></span>                                    <span class="icon-bar"></span>                                    <span class="icon-bar"></span>                                    </button>                                                                </div>                                <div class="collapse navbar-collapse" id="navbar-ex1-collapse">                                    <ul class="nav navbar-nav">                                        <!-- main li one start -->                                                                                <li class="dropdown">                                            <a href="http://www.remedio.in/category/otc/1" class="dropdown-toggle" id="1" data-toggle="" role=""                                                aria-haspopup="true" aria-expanded="false"><!--                                            <a href="--><!--Home/productcomingsoon" >-->                                                <img src="http://www.remedio.in/assets/w_category/home-page-icon-1.png" id="1" title="OTC" width="25" height="25">                                                <span class="fon-cap">OTC</span>                                            </a>                                            <ul class="dropdown-menu">                                                                                                <li class="dropdown ">                                                    <a href="http://www.remedio.in/sub-category/skin-care/1" id="1" class="dropdown-toggl" data-toggle="">Skin Care</a>                                                                                                    <li class="dropdown ">                                                    <a href="http://www.remedio.in/sub-category/surgical-items/2" id="2" class="dropdown-toggl" data-toggle="">Surgical Items</a>                                                                                                    <li class="dropdown ">                                                    <a href="http://www.remedio.in/sub-category/baby-care/3" id="3" class="dropdown-toggl" data-toggle="">Baby Care</a>                                                                                                    <li class="dropdown ">                                                    <a href="http://www.remedio.in/sub-category/hair-care/4" id="4" class="dropdown-toggl" data-toggle="">Hair Care</a>                                                                                                    <li class="dropdown ">                                                    <a href="http://www.remedio.in/sub-category/lady-care/6" id="6" class="dropdown-toggl" data-toggle="">Lady Care</a>                                                                                                    <li class="dropdown ">                                                    <a href="http://www.remedio.in/sub-category/pet-care/7" id="7" class="dropdown-toggl" data-toggle="">Pet Care</a>                                                                                                    <li class="dropdown ">                                                    <a href="http://www.remedio.in/sub-category/neutraceuticals/9" id="9" class="dropdown-toggl" data-toggle="">Neutraceuticals</a>                                                                                                    <li class="dropdown ">                                                    <a href="http://www.remedio.in/sub-category/others/10" id="10" class="dropdown-toggl" data-toggle="">Others</a>                                                                                                    <li class="dropdown ">                                                    <a href="http://www.remedio.in/sub-category/otc-medicine/11" id="11" class="dropdown-toggl" data-toggle="">OTC Medicine</a>                                                                                                    <li class="dropdown ">                                                    <a href="http://www.remedio.in/sub-category/mens-care/12" id="12" class="dropdown-toggl" data-toggle="">Mens care</a>                                                                                                    <li class="dropdown ">                                                    <a href="http://www.remedio.in/sub-category/dental-care/13" id="13" class="dropdown-toggl" data-toggle="">Dental Care</a>                                                                                                    </li>                                            </ul>                                        </li>                                                                                <li class="dropdown">                                            <a href="http://www.remedio.in/Home/prescriptionupload" class="dropdown-toggle" id="" data-toggle="" role=""                                               aria-haspopup="true" aria-expanded="false">                                                <img src="http://www.remedio.in/public/img/home-page-icon-2.png" id="" title="" width="30" height="30">                                                <span>PHARMACY</span>                                            </a>                                        </li>                                        <li class="dropdown">                                            <a href="http://www.remedio.in/Home/alldoctorslist" class="dropdown-toggle" id="" data-toggle="" role=""                                               aria-haspopup="true" aria-expanded="false">                                                <img src="http://www.remedio.in/public/img/home-page-icon-3.png" id="" title="" width="30" height="30">                                                <span>DOCTORS DIRECTORY</span>                                            </a>                                        </li>                                        <li class="dropdown">                                            <a href="http://www.remedio.in/Home/hospital" class="dropdown-toggle" id="" data-toggle="" role=""                                               aria-haspopup="true" aria-expanded="false">                                                <img src="http://www.remedio.in/public/img/home-page-icon-13.png" id="" title="" width="30" height="30">                                                <span> HOSPITAL DIRECTORY</span>                                            </a>                                        </li>                                        <li class="dropdown">                                            <a href="http://www.remedio.in/Home/laboratory" class="dropdown-toggle" id="" data-toggle="" role=""                                               aria-haspopup="true" aria-expanded="false">                                                <img src="http://www.remedio.in/public/img/home-page-icon-12.png" id="" title="" width="30" height="30">                                                <span>  LABORATORY DIRECTORY</span>                                            </a>                                        </li>                                        <li class="dropdown ">                                            <a href="http://www.remedio.in/Home/promotions" class="dropdown-toggle" id="" data-toggle="" role=""                                               aria-haspopup="true" aria-expanded="false">                                                <img src="http://www.remedio.in/public/img/home-page-icon-4.png" id="" title="" width="30" height="30">                                                <span>OFFER</span>                                            </a>                                        </li>                                    </ul>                                </div>                            </div>                        </nav>                    </div><!-- End Breadcrumbs -->
+<!-- Main Content -->
+<div class="container m-t-3">
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Privacy Policy</h3>
+
+           <div class="text-center"> <h1> Coming Soon . . . . .</h1></div>
+           <br>
+        </div>
+    </div>
+</div>
+<!-- End Product List -->
+<!-- End Main Content -->
+</section>
+<div class="footer">
+
+    <div id="mySidenav" class="sidenav hideshowmedamynav">
+        <a id="facebookshare" class="sharetofacebookda" href="#"><i class="fa fa-facebook fasty"></i><span
+                    class="gddckzm "> Share on Facebook</span></a>
+        <a href="#" class="sharetotwitterda" id="twitter"><i class="fa fa-twitter fasty"></i><span class="gddckzm "> Share on Twitter</span></a>
+        <a href="#" class="sharetogoogleplusda" id="googleplus"><i class="fa fa-google-plus fasty"></i><span
+                    class="gddckzm "> Share on Google +</span></a>
+        <a href="#" class="sharetolinkdnda" id="linkedin"><i class="fa fa-linkedin fasty"></i><span class="gddckzm "> Share on Linkedin</span></a>
+        <a href="#" class="sharetopinda" id="pinterest"><i class="fa fa fa-pinterest-p fasty"></i><span
+                    class="gddckzm "> Share on Pinterest</span></a>
+
+    </div>
+    <div id="sharemobilenave" class="sharemobilenave">
+        <a id="sharemobile" class="sharemobile"><i class="fa fa-share-alt fasty fastynew" id="fastynew"></i></a>
+    </div>
+
+    <div class="container padd-con">
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="title-footer"><span> INFORMATION</span></div>
+                <ul>
+                    <li><a href="http://www.remedio.in/Home/about">About Us</a></li>
+                    <li><a href="http://www.remedio.in/Home/myprofile" class="suportprofile">Customer Service</a></li>
+                    <li><a href="http://www.remedio.in/Home/privacypolicy">Privacy Policy</a></li>
+                    <li><a href="http://www.remedio.in/Home/sitemap">Site Map</a></li>
+                    <li><a href="http://www.remedio.in/Home/contactus">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- <div class="clearfix visible-sm-block"></div> -->
+                                <div class="col-md-4 col-sm-6">
+                        <div class="title-footer"><span class="text-center">  FOLLOW US</span></div>
+                        <ul class="follow-us">
+                                                            <li><a href="admin" class="facebk"><i
+                                                class="fa fa-facebook"></i></a></li>
+                                                                                            <li><a href="admin" class="twit"><i
+                                                class="fa fa-twitter"></i></a></li>
+                                <!--                    <li><a href="#" class="gopul"><i class="fa fa-google-plus"></i></a></li>-->
+                                <br>      <br>      <br>
+                                                                                                                                            </ul>
+                    </div>
+                                <div class="col-md-4 col-sm-12">
+                <div class="title-footer"><span> CONTACT</span></div>
+                <ul>
+                    <li><a href="http://www.remedio.in/Home/contactus">Remedio Pharmaceuticals <br>
+                            2nd Floor,Kuriland Tower, Marar Road, <br>
+                            Thrissur 680001 </a></li>
+                    <li><span style="color: #383838;font-size: 15px;font-weight: 500;"> Phone : </span><a
+                                href="tel:6282286867"> +91 6282286867</a></li>
+                    <li><span style="color: #383838;font-size: 15px;font-weight: 500;"> Email :</span> <a
+                                href="mailto:info@remedio.in">info@remedio.in</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+        <div class="row">
+
+            <div class="clearfix visible-sm-block"></div>
+            <div class="col-md-12 col-sm-12 text-center bor-top-foot">
+                <div class="title-footer pay-sty"><span>  PAYMENT METHOD</span></div>
+                <img src="http://www.remedio.in/public/user/images/payment-1.png" alt="Payment-1">
+                <img src="http://www.remedio.in/public/user/images/payment-2.png" alt="Payment-2">
+                <img src="http://www.remedio.in/public/user/images/payment-3.png" alt="Payment-3">
+                <img src="http://www.remedio.in/public/user/images/payment-4.png" alt="Payment-4">
+                <img src="http://www.remedio.in/public/user/images/payment-5.png" alt="Payment-5">
+                <div class=" pay-sty" style="color: gray;"><span>  ( Coming Soon )</span></div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center copyright">
+        Copyright &copy; 2018 Remedio Pharmaceuticals All right reserved | Designed by <a href="http://www.atees.in"
+                                                                                          target="_blank">ATEES</a>
+    </div>
+</div>
+
+<div class="mobfooter" style="display: none;">
+    <div class="container-fluid">
+        <div class="row">
+            <div>
+                <div class="col-sm-6 col-xs-6 " style="padding: 10px 0px 10px 5px;width: 50% !important;">
+                    <div class="emailtext"><a href="mailto:info@remedio.in" target="_blank" style="color: #337ab7;"> <i
+                                    class="fa fa-envelope "></i> info@remedio.in </a></div>
+                </div>
+                <div class="col-sm-6 col-xs-6"
+                     style="padding: 10px 0px 10px 0px;text-align: center;width: 50% !important;"><span
+                            class="callustext"><a href="tel:6282286867" target="_blank" style="color: #fff;"> <i
+                                    class="fa  fa-phone"></i> Call Now</a></span></div>
+                <!-- <div class="col-sm-4 col-xs-4">hi</div> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<a href="javascript:void(0)" class="back-top text-center">
+    <i class="fa fa-angle-double-up"></i>
+</a>
+
+<!-- <div class="chooser chooser-hide">
+    <div class="chooser-toggle">
+        <button class="btn btn-warning ww-olot_Ff17" type="button"><i class="fa fa-commenting-o bigger-130"></i></button>
+    </div>
+    <div class="chooser-content">
+        chat
+    </div>
+</div> -->
+<!-- Modal -->
+<div class="modal" id="loginorregisetr" role="dialog">
+    <div class="modal-dialog login_dookk">
+        <div class="modal-content md-lofin">
+            <button type="button" class="close boot-model-register" onclick="wanttoregister(event)"
+                    data-dismiss="modal">&times;
+            </button>
+            <div class="modal-body md-body-log no-pb"
+                 style="background-image: url(http://www.remedio.in/public/img/img-login.png);background-position: center;background-size: cover;">
+                <div class="image_spinner_on" style="display: none;">
+                    <img src="https://loading.io/spinners/spinner/index.ajax-spinner-preloader.gif"
+                         class="imagespiiner">
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 no-pading">
+                        <div class="form-login-eg disnone_img">
+                            <img src="http://www.remedio.in/public/img/regi1.jpg" ng-class="img-responsive"
+                                 width="100%" style="margin-top: -15px;">
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-8">
+                        <div class="form-login-eg margin-t30" id="loginandregister">
+                            <form onsubmit="otpregister(event)" id="otpregister">
+                                <div class="form-group" id="removeeEMN">
+                                    <label for="emn">Enter Mobile no *</label>
+                                    <input type="text" class="form-control" id="entermobno" autofocus>
+                                    <span class="_ind_cod ">+91</span>
+                                    <a class="recent-otp" id="editnumbera" style="display:none;"
+                                       href="javascript:void(0)"     onclick="editnumber(event);">Edit number</a>
+                                </div>
+                                <div class="form-group btnregister">
+                                    <button type="submit" class="register-login registerinbox" id="continuew">Continue
+                                    </button>
+                                    <button type="submit" class="register-login registerinbox"
+                                            onclick="validateotp(event)" id="registernow" style="display:none">Register
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="frgtpas" style="display: none;">
+                            <div class="form-group" id="removeeEMN">
+                                <label for="emn">Enter Mobile no *:</label>
+                                <input disabled type="number" value="" class="form-control" id="entermobno"
+                                       autofocus="">
+                                <span class="_ind_cod">+91</span>
+                                <a class="recent-otp" id="editnumberasqr" href="javascript:void(0)"
+                                   onclick="wanttoregister(event)">Edit number</a>
+                            </div>
+                            <div class="form-group" id="removeeFDRE">
+                                <label for="emn">Enter OTP:</label><input type="number" class="form-control"
+                                                                          id="enterotpfr">
+                                <a class="recent-otp" id="resendotp" href="javascript:void(0)"
+                                   onclick="otpregisterFRGT(event)">Resend OTP</a>
+                            </div>
+                            <div class="form-group" id="removeeDFER">
+                                <label for="emn">Enter New Password:</label>
+                                <input type="password" autocomplete="off" class="form-control" id="enterpaswordfrgt">
+                                <button type="submit" class="register-login registerbox" id="forgotupdate">Login
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<input type="hidden" name="base" value="http://www.remedio.in/" id="baseurls">
+<script src="http://www.remedio.in/public/user/bootstrap/js/bootstrap.js"></script>
+<script src="http://www.remedio.in/public/user/js/bootstrap-select.js"></script>
+<script src="http://www.remedio.in/public/user/js/jquery.ez-plus.js"></script>
+<script src="http://www.remedio.in/public/user/js/jquery.raty-fa.js"></script>
+<script src="http://www.remedio.in/public/user/js/owl.carousel.js"></script>
+<script src="http://www.remedio.in/public/user/js/bootstrap3-typeahead.js"></script>
+<script src="http://www.remedio.in/public/user/js/bootstrap-toolkit.js"></script>
+<!-- <script src="http://www.remedio.in/public/user/js/jquery.bootstrap-touchspin.js"></script> -->
+<script src="http://www.remedio.in/public/user/js/mimity.js"></script>
+<script src="http://www.remedio.in/public/user/js/mimity.detail.js"></script>
+<script src="http://www.remedio.in/public/js/wowrep.js"></script>
+<script src="http://www.remedio.in/public/release/pagination.full.min.js"></script>
+<!-- snow xams -->
+<!-- <script src="http://www.remedio.in/public/js/snowfall.jquery.js"></script>-->
+<script type="text/javascript">
+    $(".owl-next").html("<i class='fa fa-angle-right'></i>");
+    $(".owl-prev").html("<i class='fa fa-angle-left'></i>");
+</script>
+<div id="snackbar">Tost activated</div>
+<div class="image_spinner_on_main" style="display: none;">
+    <img src="https://loading.io/spinners/spinner/index.ajax-spinner-preloader.gif" class="imagespiiner">
+</div>
+
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.4/jquery.lazy.min.js"></script>
+<script>
+    $(function () {
+        $('.lazy').lazy({
+            effect: "fadeIn",
+            effectTime: 2000,
+            threshold: 0
+        });
+    });
+</script>
+<script language="javascript" type="text/javascript">
+    $(window).load(function () {
+        $("#loading").fadeOut("slow");
+    });
+</script>
+
+<style type="text/css">
+    @media (max-width: 768px) {
+        .hideshowmedamynav {
+            display: none;
+        }
+
+        .footer {
+            margin-bottom: 40px !important;
+        }
+
+        .mobfooter {
+            display: block !important;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 99;
+            background-color: white;
+        }
+
+        .back-top {
+            bottom: 40px !important;
+        }
+
+        .callustext {
+            padding: 6px 12px;
+            font-size: 14px;
+            color: white;
+            border-radius: 8px;
+            background-color: #0259ac;
+        }
+
+        .emailtext {
+            text-align: center;
+            padding: 0px 12px;
+            font-size: 14px;
+            color: #0259ac;
+            border-radius: 8px;
+        }
+
+        #mySidenav a {
+            line-height: 1.4;
+            position: fixed;
+            right: -155px !important;
+            transition: 0.3s;
+            padding: 7px 0px 7px 2px !important;
+            width: 190px;
+            text-decoration: none;
+            font-size: 14px !important;
+            color: white;
+            border-radius: 5px 0px 0px 5px;
+            z-index: 99999;
+        }
+
+        i.fa.fastynew {
+            padding: 0px 8px 0px 8px !important;
+        }
+
+        #sharemobilenave a {
+            cursor: pointer;
+            line-height: 1.4;
+            position: fixed;
+            right: 0;
+            transition: 0.3s;
+            padding: 7px 0px 7px 0px !important;
+            /* width: 190px; */
+            text-decoration: none;
+            font-size: 14px !important;
+            color: white;
+            border-radius: 5px 0px 0px 5px;
+            z-index: 99999;
+        }
+
+        .whatsappda {
+            bottom: 75px !important;
+            background-color: #17a707 !important;
+            padding: 6px 13px !important;
+            font-size: 24px !important;
+        }
+
+        #sharemobile {
+            top: 265px;
+            display: block !important;
+            background-color: #225799 !important;
+        }
+
+        #twitter {
+            top: 125px !important;
+        }
+
+        #googleplus {
+            top: 160px !important;
+        }
+
+        #linkedin {
+            top: 195px !important;
+        }
+
+        #pinterest {
+            top: 230px !important;
+        }
+    }
+
+    #mySidenav a {
+        line-height: 1.4;
+        position: fixed;
+        right: -145px;
+        transition: 0.3s;
+        padding: 7px 0px 7px 8px;
+        width: 190px;
+        text-decoration: none;
+        font-size: 16px;
+        color: white;
+        border-radius: 5px 0px 0px 5px;
+        z-index: 99999;
+    }
+
+    #mySidenav a:hover {
+        right: 0 !important;
+    }
+
+    #sharemobile {
+        display: none;
+    }
+
+    #facebookshare {
+        top: 90px;
+        background-color: #39579A !important;
+    }
+
+    #twitter {
+        top: 130px;
+        background-color: #1DA8E2 !important;
+    }
+
+    #googleplus {
+        top: 170px;
+        background-color: #f44336 !important;
+    }
+
+    #linkedin {
+        top: 210px;
+        background-color: #337ab7 !important;
+    }
+
+    #pinterest {
+        top: 250px;
+        background-color: #d9534f !important;
+    }
+
+    i.fa.fasty {
+        padding: 0px 15px 0px 10px;
+    }
+</style>
+
+<script>
+    $('#sharemobilenave').click(function (event) {
+        $("#mySidenav").toggleClass("hideshowmedamynav");
+        $("#fastynew").toggleClass("fastynew");
+    });
+</script>
+
+<script>
+    var pageURL = $(location).attr("href");
+    $('.sharetogoogleplusda').click(function (e) {
+// $(".image_spinner_on_main").css('display', '');
+        window.location = ' https://plus.google.com/share?url=' + pageURL + '';
+    });
+    $('.sharetolinkdnda').click(function (e) {
+// $(".image_spinner_on_main").css('display', '');
+        window.location = 'https://www.linkedin.com/shareArticle?mini=true&url=' + pageURL + '/&title=&summary=&source=';
+    });
+    $('.sharetomailda').click(function (e) {
+// $(".image_spinner_on_main").css('display', '');
+        window.location = 'mailto:info@hotelbozz.com';
+    });
+    $('.sharetofacebookda').click(function (e) {
+// $(".image_spinner_on_main").css('display', '');
+        window.location = 'https://www.facebook.com/sharer/sharer.php?u=' + pageURL + '';
+    });
+    $('.sharetotwitterda').click(function (e) {
+// $(".image_spinner_on_main").css('display', '');
+        window.location = 'https://twitter.com/home?status=' + pageURL + '';
+    });
+    $('.sharetopinda').click(function (e) {
+// $(".image_spinner_on_main").css('display', '');
+        window.location = 'https://pinterest.com/pin/create/button/?url=&media=' + pageURL + '/&description=';
+    });
+</script>
+<!--<script >-->
+<!--    $(document).ready(function() {-->
+<!--        console.log('hiii');-->
+<!--        var showChar =10;-->
+<!--        var ellipsestext = "...";-->
+<!--        $(".morecontent").each(function() {-->
+<!--            console.log('hiiiiiii');-->
+<!--            var content = $(this).html();-->
+<!---->
+<!--            if(content.length > showChar) {-->
+<!--                var c = content.substr(0, showChar);-->
+<!--                var h = content.substr(showChar-1, content.length - showChar);-->
+<!---->
+<!--                var html = c + '<span class="moreellipses">' + ellipsestext + '&nbsp;</span><span class="morecontentother"><span>' + h + '</span>';-->
+<!---->
+<!--                $(this).html(html);-->
+<!--            }-->
+<!---->
+<!--        });-->
+<!--    });-->
+<!--</script>-->
+</body>
+</html>

@@ -1,0 +1,235 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<div class="show">
+  <div class="overlay"></div>
+  <div class="img-show">
+    <span class="close">&times;</span>
+    <img src="http://rupinis.com/roopini-new.jpg">
+  </div>
+</div>
+ <style type="text/css">.close{color:#f1f1f1;font-weight:700;transition:.3s;opacity:100}.popup{width:900px;margin:auto;text-align:center}.popup img{width:200px;height:200px;cursor:pointer}.show{z-index:999;display:none}.show .overlay{width:100%;height:100%;background:rgba(0,0,0,.66);position:fixed;top:0;left:0}.show .img-show{width:900px;height:675px;background:#fff;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);overflow:hidden}.img-show span{position:fixed;top:10px;right:10px;z-index:99;cursor:pointer}.img-show img{width:100%;height:100%;position:fixed;top:0;left:0}.show{z-index:999999999999999999}@media (max-width:768px){.show .img-show{width:100%;height:100%;overflow:hidden;z-index:9999}}.show .overlay{z-index:999999}.show .img-show{z-index:99999999999999}</style>
+<script type="">
+	$(window).on('load',function(){
+	var url = window.location.href;  
+if (url == 'http://www.rupinis.com/') {
+	 $(".show").fadeIn();
+}
+
+ if (url == 'http://rupinis.com/') {
+	 $(".show").fadeIn();
+}
+
+$("span, .overlay").click(function(){
+$(".show").fadeOut();});});
+</script>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en" xml:lang="en">
+<head>
+<title>Rupinis</title>
+<base href="http://www.rupinis.com/" />
+<meta name="description" content="Rupinis" />
+<link href="http://www.rupinis.com/image/data/cart.png" rel="icon" />
+<link rel="stylesheet" type="text/css" href="catalog/view/theme/rupinis/stylesheet/stylesheet.css" />
+<link rel="stylesheet" type="text/css" href="catalog/view/theme/rupinis/stylesheet/slideshow.css" media="screen" />
+<script type="text/javascript" src="catalog/view/javascript/jquery/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="catalog/view/javascript/jquery/ui/jquery-ui-1.8.16.custom.min.js"></script>
+<link rel="stylesheet" type="text/css" href="catalog/view/javascript/jquery/ui/themes/ui-lightness/jquery-ui-1.8.16.custom.css" />
+<script type="text/javascript" src="catalog/view/javascript/jquery/ui/external/jquery.cookie.js"></script>
+<script type="text/javascript" src="catalog/view/javascript/jquery/colorbox/jquery.colorbox.js"></script>
+<link rel="stylesheet" type="text/css" href="catalog/view/javascript/jquery/colorbox/colorbox.css" media="screen" />
+<script type="text/javascript" src="catalog/view/javascript/jquery/tabs.js"></script>
+<script type="text/javascript" src="catalog/view/javascript/common.js"></script>
+<script type="text/javascript" src="catalog/view/javascript/jquery/nivo-slider/jquery.nivo.slider.pack.js"></script>
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="catalog/view/theme/rupinis/stylesheet/ie7.css" />
+<![endif]-->
+<!--[if lt IE 7]>
+<link rel="stylesheet" type="text/css" href="catalog/view/theme/rupinis/stylesheet/ie6.css" />
+<script type="text/javascript" src="catalog/view/javascript/DD_belatedPNG_0.0.8a-min.js"></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('#logo img');
+</script>
+<![endif]-->
+</head>
+<body>
+<div id="container">
+<div id="wrapper">
+<!--<div id="header">
+    <div id="logo"><a href="http://www.rupinis.com/index.php?route=common/home"><img src="http://www.rupinis.com/image/data/logo.gif" title="Rupinis" alt="Rupinis" /></a></div>
+      <form action="http://www.rupinis.com/index.php?route=module/currency" method="post" enctype="multipart/form-data">
+  <div id="currency">
+  	<a href="#">Currency</a>
+    <div id="currency-option">
+                <a title="Pound Sterling" onclick="$('input[name=\'currency_code\']').attr('value', 'GBP'); $(this).parent().parent().submit();">£</a>
+                        <a title="SG Dollar"><b>$</b></a>
+                <input type="hidden" name="currency_code" value="" />
+    <input type="hidden" name="redirect" value="http://www.rupinis.com/index.php?route=common/home" />
+    </div>
+  </div>
+</form>
+  <div id="cart">
+  <div class="heading">
+    <h4>Cart</h4>
+    <a><span id="cart-total"></span></a></div>
+  <div class="content">
+        <div class="empty">Your shopping cart is empty!</div>
+      </div>
+</div>  <div id="search">
+    <div class="button-search"></div>
+        <input type="text" name="filter_name" value="Search" onclick="this.value = '';" onkeydown="this.style.color = '#000000';" />
+      </div>
+  <div id="welcome">
+        Welcome visitor you can <a href="http://www.rupinis.com/index.php?route=account/login">login</a> or <a href="http://www.rupinis.com/index.php?route=account/register">create an account</a>.      </div>
+  <div class="links"><a href="http://www.rupinis.com/index.php?route=common/home">Home</a><a href="http://www.rupinis.com/index.php?route=account/wishlist" id="wishlist-total">Wish List (0)</a><a href="http://www.rupinis.com/index.php?route=account/account">My Account</a><a href="http://www.rupinis.com/index.php?route=checkout/cart">Shopping Cart</a><a href="http://www.rupinis.com/index.php?route=checkout/checkout">Checkout</a></div>
+</div>-->
+<div id="header">
+    <div id="logo"><a href="http://www.rupinis.com/index.php?route=common/home"><img src="http://www.rupinis.com/image/data/logo.gif" title="Rupinis" alt="Rupinis" /></a></div>
+      <div id="header-right">
+        <div class="cart-text"><div id="cart">
+  <div class="heading">
+    <h4>Cart</h4>
+    <a><span id="cart-total"></span></a></div>
+  <div class="content">
+        <div class="empty">Your shopping cart is empty!</div>
+      </div>
+</div></div>
+        <div id="search">
+                <input type="text" name="filter_name" value="Search" onclick="this.value = '';" onkeydown="this.style.color = '#fff';" class="user"/>
+                <a href="#"><img src="catalog/view/theme/rupinis/image/search-button.gif" alt="" /></a></div>
+        <div class="header-link">
+        	<a href="http://www.rupinis.com/index.php?route=common/home">Home</a>|<a href="http://www.rupinis.com/index.php?route=account/wishlist" id="wishlist-total">Wish List (0)</a>|<a href="http://www.rupinis.com/index.php?route=account/account">My Account</a>|<a href="http://www.rupinis.com/index.php?route=checkout/cart">Shopping Cart</a>|<a href="http://www.rupinis.com/index.php?route=checkout/checkout">Checkout</a>
+        </div>
+    </div>
+</div>  
+<div id="menu-bar">
+		<div class="menu-left"></div>
+		<div class="menu-middle">
+			<div id="top-menu">
+				<ul>
+                	<li><a href="index.php">Home</a></li>
+					<li><a class="active-left" href="index.php?route=information/information&information_id=4">About Us</a></li>
+					<li><a href="index.php?route=information/information&information_id=21">Founder</a></li>
+					<li><a href="index.php?route=information/information&information_id=22">Brands</a></li>
+					<!--<li><a href="#">Estore</a></li>-->
+					<li><a href="index.php?route=information/information&information_id=20">Promotions</a></li>
+					<li><a href="index.php?route=common/locations">Location</a></li>
+					<li class="end"><a href="index.php?route=information/contact">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="menu-right"></div>
+	</div>
+<div id="notification"></div>
+ 
+<div id="content-home">
+<div class="slideshow">
+  <div id="slideshow0" class="nivoSlider" style="width: 980px; height: 313px;">
+            <img src="http://www.rupinis.com/image/cache/data/Banner/rupinis slider-980x313.png" alt="Rupinis Banner newone" />
+                <img src="http://www.rupinis.com/image/cache/data/Banner/rupinissliderr-980x313.png" alt="Rupinis Banner newtwo" />
+                <img src="http://www.rupinis.com/image/cache/data/THREADING PROMO1-980x313.png" alt="B05" />
+                <img src="http://www.rupinis.com/image/cache/data/Banner/slide3-980x313.jpg" alt="Rupinis Third Banner" />
+                <img src="http://www.rupinis.com/image/cache/data/Banner/slide1-980x313.jpg" alt="Rupinis First Banner" />
+                <img src="http://www.rupinis.com/image/cache/data/Banner/slide2-980x313.jpg" alt="Rupinis Second Banner" />
+          </div>
+</div>
+<script type="text/javascript"><!--
+$(document).ready(function() {
+	$('#slideshow0').nivoSlider();
+});
+--></script><div class="entry"><a href="index.php?route=product/category/information&path=60&informattion_id=8"><img src="catalog/view/theme/rupinis/image/entry-1.jpg" alt="" /></a></div>
+<div class="entry"><a href="index.php?route=product/category/information&path=61&informattion_id=12"><img src="catalog/view/theme/rupinis/image/entry-2.jpg" alt="" /></a></div>
+<div class="entry"><a href="index.php?route=product/category/information&path=62&informattion_id=15"><img src="catalog/view/theme/rupinis/image/entry-3.jpg" alt="" /></a></div>
+<div class="entry-1"><a href="index.php?route=product/category/information&path=63&informattion_id=18"><img src="catalog/view/theme/rupinis/image/entry-4.jpg" alt="" /></a></div>
+<div id="content-left">
+    <div id="welcome">
+        <div class="content-left-top"></div>
+        <div class="content-left-middle">
+            <div class="welcome-head">Welcome to <span>Rupini's</span></div>
+            <div class="welcome-text">
+            	<p>
+                	<p>
+	The name "Rupini" signifies "Beauty" in Tamil.<br />
+	<br />
+	Rupini’s was established on the 2nd October 1994 as a sole proprietorship and later became a private limited company in 1997. The primary business of the company is to provide a wide range of bridal and beauty services. Rupini’s has successfully operated for 19 years and even opened 2 salons just&nbsp; for men.<br />
+	<br />
+	Holistic beauty care being the central theme at Rupini’s, our philosophy entails the total grooming of a person, both physical and mental.&nbsp; Rupini’s prides itself to be the forerunner and a trendsetter among the Indian beauty salons in Singapore. Using herbal and fruit based products in a calm and soothing..
+                </p> <a href="index.php?route=information/information&information_id=8">Read More...</a></div>
+        </div>
+        <div class="content-left-bottom"></div>
+    </div>
+    <div style="clear:both;"></div>
+    <!--<div id="popular-products">
+				<div class="content-left-top"></div>
+				<div class="content-left-middle">
+					<div class="popular-head">Popular Products</div>
+					<div class="popular-images">
+						<p><img src="catalog/view/theme/rupinis/image/1.jpg" alt="" /></p>
+						<p><img src="catalog/view/theme/rupinis/image/2.jpg" alt="" /></p>
+						<p><img src="catalog/view/theme/rupinis/image/3.jpg" alt="" /></p>
+					</div>
+					
+				</div>
+				<div class="content-left-bottom"></div>
+			</div>-->
+            <div class="box site-bg" style="width:729px; margin-top:15px;">
+<div class="top-left-bg"></div>
+<div class="top-right-bg"></div>
+<div class="bottom-left-bg"></div>
+<div class="bottom-right-bg"></div>
+  <!--<div class="box-heading">Featured</div>-->
+  <div class="popular-head" style="margin-top:15px;">Popular Products</div>
+  <div class="box-content">
+    <div class="box-product">
+          </div>
+  </div>
+</div>
+</div> 
+<div id="content-right">
+			        	<div class="grand-offer"><a href="#"><img alt="" src="catalog/view/theme/rupinis/image/offer.jpg"></a></div>
+			<div id="testimonials">
+				<div class="content-right-top"></div>
+				<div class="content-right-middle">
+					<div class="testimonial-head">Testimonials</div>
+					<div class="testimonial-text">
+                    	<p></p>
+                        <a href="index.php?route=product/testimonial">Read More...</a>
+                        </div>
+				</div>
+				<div class="content-right-bottom"></div>
+			</div>
+ </div>   
+<div style="clear:both"></div>
+<h1 style="display: none;">Rupinis</h1>
+</div>
+<div id="footer-bar">
+		<div class="footer-top"></div>
+		<div class="footer-middle">
+			<div id="bottom-footer">
+				<a href="index.php" class="active">Home</a>|
+				<a href="index.php?route=information/information&information_id=4">About</a>|
+				<a href="index.php?route=information/information&information_id=21">Founder</a>|
+				<a href="index.php?route=information/information&information_id=22">Brands</a>|
+				<a href="index.php?route=information/information&information_id=20">Promotions</a>|
+				<a href="index.php?route=common/locations">Location</a>|
+				<a href="index.php?route=information/contact">Contact Us</a>
+				<p>&copy; Copyright 2012. All Right Reserved.</p>
+			</div>
+			<div class="follow-us">Follow Us<a href="https://twitter.com/#!/rupinisbeauty" target="_blank"><img alt="" src="catalog/view/theme/rupinis/image/t.png"></a><a href="http://www.youtube.com/user/rupinisbeauty" target="_blank"><img alt="" src="catalog/view/theme/rupinis/image/youtube-icon.png"></a><a href="http://www.facebook.com/pages/Rupinis-Beauty-Consultant/188248754552562" target="_blank"><img alt="" src="catalog/view/theme/rupinis/image/f.png"></a>
+			</div>
+			<div class="powered-text">Powered by <a href="http://www.oclocksoftware.com">OCS</a></div>
+		</div>
+		<div class="footer-bottom"></div>
+    </div>
+<!--
+OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.
+Please donate via PayPal to donate@opencart.com
+//-->
+<div id="powered"></div>
+<!--
+OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.
+Please donate via PayPal to donate@opencart.com
+//-->
+</div>
+</div>
+</body></html>

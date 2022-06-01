@@ -1,0 +1,1090 @@
+ <!DOCTYPE html><html lang="en">    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />    <head>        <meta charset="utf-8">        <meta http-equiv="X-UA-Compatible" content="IE=edge">        <meta name="viewport" content="width=device-width, initial-scale=1">        <link rel="shortcut icon" href="http://www.remedio.in/public/user/images/fav.png" type="png">                    <title></title>            <meta name="description" content="">            <meta name="keywords" content=""/>                <link href="http://www.remedio.in/public/user/bootstrap/css/bootstrap.css" rel="stylesheet">        <!-- Plugins -->        <link href="http://www.remedio.in/public/user/css/font-awesome.css" rel="stylesheet">        <link href="http://www.remedio.in/public/user/css/bootstrap-select.css" rel="stylesheet">        <link href="http://www.remedio.in/public/user/css/owl.carousel.css" rel="stylesheet">        <link href="http://www.remedio.in/public/user/css/owl.theme.default.css" rel="stylesheet">        <link href="http://www.remedio.in/public/user/wowk/wkstyles/wk-css-bundle.css" rel="stylesheet">        <script src="http://www.remedio.in/public/user/js/jquery.js"></script>        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.css">        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.min.js"></script>        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->        <!--[if lt IE 9]>        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>        <![endif]-->    </head>    <noscript>    <p style="    display: block;        text-align: center;        border: 1px solid;        color: red;        position: fixed;        z-index: 9999999;        width: 100%;        background: black;        color: white;        top: 30%;        padding: 100px;        font-size: 40px;        ">        <span style="font-size: 18px;">Warning!!!</span><br>        Sorry, your browser does not support JavaScript! <br>        <span style="font-size: 16px;">*******  Please Enable JavaScript for better experience!  *******</span> <br>        <span style="font-size: 16px;">Remedio</span></p>        <style type="text/css">body {        filter: grayscale(100%);        }    </style>        </noscript>        <style >              .mob-cartda{display: none;} .mob-cartda a{background-color: #1fbd7b;color: white;padding: 12px 10px;border-radius: 50%;position: fixed;right: 1px;top: 350px;z-index: 9999;box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.21);}        @media(max-width: 767px){.mob-cartda{display: block !important;}.cart_empty_image img {width: 100%;}}        #loading {position: fixed;left: 0px;top: 0px;width: 100%;height: 100%;z-index: 9999999;background: url(http://www.remedio.in/public/img/homeload1.gif) 50% 50% no-repeat #ffffff;}                </style>        <body class="fade-down">            <!-- header -->            <div id="loading"></div>            <div class="headerimport" id="headeromport">                <div class="top-header ">                    <div class="container">                        <div class="row">                            <div class="col-xs-12">                               <span class="hidden-lg hidden-md hidden-sm">  <a href="http://www.remedio.in/" style="padding: 10px 7px;color: white;display: inline-block;"> <i class="fa fa-home" aria-hidden="true"></i> Home</a></span>                                <ul class="list-inline pull-right ww-olot_Ff7">                                                                        <li class="loginloginpage">                                        <div class="dropdown">                                            <button class="btn dropdown-toggle reginfo" type="button"                                            data-toggle="modal" data-target="#loginorregisetr" role="button"                                            onclick="wanttoregister()">                                            <i class="fa fa-sign-in" aria-hidden="true"></i> Login / Register                                            </button>                                        </div>                                    </li>                                                                        <li class="hidden-xs"><a href="http://www.remedio.in/Home/myprofile" class="suportprofile"><i class="fa fa-phone-square" aria-hidden="true"></i> 24x7 Customer Care</a></li>                                    <li class="hidden-xs"><a href="http://www.remedio.in/Home/myprofile" class="trackorderTOprofile" ><i class="fa fa-truck" aria-hidden="true"></i> Track Order</a></li>                                </ul>                                <ul class="list-inline pull-left ww-olot_Ff7">                                    <li class="hidden-xs"><a href="http://www.remedio.in/" class="atv"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li><!--                                    <li class="hidden-xs">--><!--                                        <a href="--><!--" class="atv_wowqt">--><!--                                             <i class="fa fa-home_ele" aria-hidden="true"><img src="https://i.giphy.com/qspo3i5S7Or4Y.gif"></i> --><!--                                        Kerala's Fastest Online Pharmacy</a></li>-->                                    </ul>                                </div>                            </div>                        </div>                    </div>                    <div class="middle-header">                        <div class="container">                            <div class="row">                                                                   <div class="col-md-2 col-sm-12 col-xs-12 logo logoheadnomobile">                                    <a href="http://www.remedio.in/"><img alt="Logo" src="http://www.remedio.in/assets/home_images/rem.png" class="img-responsivelogo-wow" data-text-logo="remedio.in" /></a>                                </div>                                                               <form action="http://www.remedio.in/Home/searchproducts" method="post" accept-charset="utf-8">
+                                <div class="col-sm-8 col-md-7  col-xs-12 search-box m-t-3">                                    <div class="input-group">                                        <div class="frmSearch">                                            <input type="text" autocomplete="off" name="" class="form-control search-input ww-olot_Ff6" required="required" id="searchresult" aria-label="Search Your Item..." placeholder="Search Your Item...">                                            <div id="suggesstion-box">                                            </div>                                        </div>                                        <div class="input-group-btn">                                            <input type="text" id="segg_names" name="searchresult" style="border:0px !important;">                                            <button type="submit" class="btn btn-default btn-search"><i class="fa fa-search"></i></button>                                        </div>                                    </div>                                </div>                                </form>                                                                 </div>                            </div>                        </div>                        <nav class="navbar navbar-default shadow-navbar" role="navigation">                            <div class="container">                                <div class="navbar-header">                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-ex1-collapse">                                    <span class="sr-only">Toggle navigation</span>                                    <span class="icon-bar"></span>                                    <span class="icon-bar"></span>                                    <span class="icon-bar"></span>                                    </button>                                                                </div>                                <div class="collapse navbar-collapse" id="navbar-ex1-collapse">                                    <ul class="nav navbar-nav">                                        <!-- main li one start -->                                                                                <li class="dropdown">                                            <a href="http://www.remedio.in/category/otc/1" class="dropdown-toggle" id="1" data-toggle="" role=""                                                aria-haspopup="true" aria-expanded="false"><!--                                            <a href="--><!--Home/productcomingsoon" >-->                                                <img src="http://www.remedio.in/assets/w_category/home-page-icon-1.png" id="1" title="OTC" width="25" height="25">                                                <span class="fon-cap">OTC</span>                                            </a>                                            <ul class="dropdown-menu">                                                                                                <li class="dropdown ">                                                    <a href="http://www.remedio.in/sub-category/skin-care/1" id="1" class="dropdown-toggl" data-toggle="">Skin Care</a>                                                                                                    <li class="dropdown ">                                                    <a href="http://www.remedio.in/sub-category/surgical-items/2" id="2" class="dropdown-toggl" data-toggle="">Surgical Items</a>                                                                                                    <li class="dropdown ">                                                    <a href="http://www.remedio.in/sub-category/baby-care/3" id="3" class="dropdown-toggl" data-toggle="">Baby Care</a>                                                                                                    <li class="dropdown ">                                                    <a href="http://www.remedio.in/sub-category/hair-care/4" id="4" class="dropdown-toggl" data-toggle="">Hair Care</a>                                                                                                    <li class="dropdown ">                                                    <a href="http://www.remedio.in/sub-category/lady-care/6" id="6" class="dropdown-toggl" data-toggle="">Lady Care</a>                                                                                                    <li class="dropdown ">                                                    <a href="http://www.remedio.in/sub-category/pet-care/7" id="7" class="dropdown-toggl" data-toggle="">Pet Care</a>                                                                                                    <li class="dropdown ">                                                    <a href="http://www.remedio.in/sub-category/neutraceuticals/9" id="9" class="dropdown-toggl" data-toggle="">Neutraceuticals</a>                                                                                                    <li class="dropdown ">                                                    <a href="http://www.remedio.in/sub-category/others/10" id="10" class="dropdown-toggl" data-toggle="">Others</a>                                                                                                    <li class="dropdown ">                                                    <a href="http://www.remedio.in/sub-category/otc-medicine/11" id="11" class="dropdown-toggl" data-toggle="">OTC Medicine</a>                                                                                                    <li class="dropdown ">                                                    <a href="http://www.remedio.in/sub-category/mens-care/12" id="12" class="dropdown-toggl" data-toggle="">Mens care</a>                                                                                                    <li class="dropdown ">                                                    <a href="http://www.remedio.in/sub-category/dental-care/13" id="13" class="dropdown-toggl" data-toggle="">Dental Care</a>                                                                                                    </li>                                            </ul>                                        </li>                                                                                <li class="dropdown">                                            <a href="http://www.remedio.in/Home/prescriptionupload" class="dropdown-toggle" id="" data-toggle="" role=""                                               aria-haspopup="true" aria-expanded="false">                                                <img src="http://www.remedio.in/public/img/home-page-icon-2.png" id="" title="" width="30" height="30">                                                <span>PHARMACY</span>                                            </a>                                        </li>                                        <li class="dropdown">                                            <a href="http://www.remedio.in/Home/alldoctorslist" class="dropdown-toggle" id="" data-toggle="" role=""                                               aria-haspopup="true" aria-expanded="false">                                                <img src="http://www.remedio.in/public/img/home-page-icon-3.png" id="" title="" width="30" height="30">                                                <span>DOCTORS DIRECTORY</span>                                            </a>                                        </li>                                        <li class="dropdown">                                            <a href="http://www.remedio.in/Home/hospital" class="dropdown-toggle" id="" data-toggle="" role=""                                               aria-haspopup="true" aria-expanded="false">                                                <img src="http://www.remedio.in/public/img/home-page-icon-13.png" id="" title="" width="30" height="30">                                                <span> HOSPITAL DIRECTORY</span>                                            </a>                                        </li>                                        <li class="dropdown">                                            <a href="http://www.remedio.in/Home/laboratory" class="dropdown-toggle" id="" data-toggle="" role=""                                               aria-haspopup="true" aria-expanded="false">                                                <img src="http://www.remedio.in/public/img/home-page-icon-12.png" id="" title="" width="30" height="30">                                                <span>  LABORATORY DIRECTORY</span>                                            </a>                                        </li>                                        <li class="dropdown ">                                            <a href="http://www.remedio.in/Home/promotions" class="dropdown-toggle" id="" data-toggle="" role=""                                               aria-haspopup="true" aria-expanded="false">                                                <img src="http://www.remedio.in/public/img/home-page-icon-4.png" id="" title="" width="30" height="30">                                                <span>OFFER</span>                                            </a>                                        </li>                                    </ul>                                </div>                            </div>                        </nav>                    </div><style>
+    span.sizeactive {
+        border: 2px solid #c5dac5;
+        padding: 4px 14px 4px 14px;
+        cursor: pointer;
+    }
+    span.sizeactive.sizeactivein {
+        background: green;
+        border: 1px solid green;
+        color: white;
+    }
+    .kunji_kunji_images .owl-stage-outer .owl-stage .owl-item {
+        /* color: red; */
+        /*  float: none;*/
+    }
+    .revsty{
+        font-size: 18px;
+        font-weight: 500;
+        color: #153868;
+    }
+    @media(min-width: 768px){
+        .stickda{
+            position: sticky;
+            top: 110px;
+        }
+    }
+    .modal-dialog {
+        top:50% !important;
+        transform: translate(0, -50%) !important;
+        -ms-transform: translate(0, -50%) !important;
+        -webkit-transform: translate(0, -50%) !important;
+    }
+    @media(max-width: 400px){
+         .btn{
+    padding: 5px 11px !important;
+    font-size: 13px !important;
+        }
+    }
+</style>
+<input type="hidden" class="productid" value="61">
+<div class="breadcrumb-container">
+    <div class="container">
+        <ol class="breadcrumb">
+                        <li><a href="http://www.remedio.in/category/otc/1">OTC</a></li>
+            <li class="active"><a href="http://www.remedio.in/sub-category/skin-care/1">Skin Care</li></a>
+        </ol>
+    </div>
+</div>
+<!-- End Breadcrumbs -->
+<!-- Main Content -->
+<div class="container m-t-1">
+    <div class="row">
+        <div class="col-md-12 col-sm-12">
+            <div class="produc_flip_banner product_full_div col-md-12 col-sm-12">
+
+                <!-- Image List -->
+                <div class="col-sm-5 col-md-5 stickda" >
+                    <div class="low_image_den">
+                        <div class="products-slider-detail owl-carousel owl-theme m-b-2 display_products kunji_kunji_images">
+                                                            <a href="#"><img src="http://www.remedio.in/assets/w_products/90691.jpg" data-zoom-image="http://www.remedio.in/assets/w_products/90691.jpg" alt="" class="img-thumbnail" onclick="myFunction(this);"></a>
+                                                                                        <a href="#"><img src="http://www.remedio.in/assets/w_products/21992.jpg" data-zoom-image="http://www.remedio.in/assets/w_products/21992.jpg" alt="" class="img-thumbnail" onclick="myFunction(this);"></a >
+                                                            <a href="#"><img src="http://www.remedio.in/assets/w_products/94483.jpg" data-zoom-image="http://www.remedio.in/assets/w_products/94483.jpg" alt="" class="img-thumbnail" onclick="myFunction(this);"></a>
+                                                        
+                        </div>
+                    </div>
+                    <div class="image-detail image_main">
+                        <img id="expandedImg" class="main_image" src="http://www.remedio.in/assets/w_products/90691.jpg" data-zoom-image="http://www.remedio.in/assets/w_products/90691.jpg" alt="">
+                    </div>
+                                        <form action="http://www.remedio.in/Home/addtocart" method="post" accept-charset="utf-8">
+                    <input type="hidden" name="hidden" value="61">
+                    <input type="hidden" name="url" value=product/lakme-9-to-5-naturale-night-cream-50gm/61>
+                    <div class="image_rem_add addto">
+                        <button style="background: #fb641b;" type="submit" name="addtocart" class="btn btn-theme m-b-1 addtocart-function" id="addtocartcheck" value="Add to Cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart
+                        </button>
+                    </div>
+                    <div class="image_rem_add goto" style="display: none;">
+                        <a style="background: #fb641b;width: 100%;border: 2px solid #f8f8f805;border-radius: 1px;"  href="http://www.remedio.in/Home/checkout" name="addtocart" id="addtocartcheck"  class="btn btn-theme m-b-1 addtocart-function " value="Go to Cart">
+                            <i class="fa fa-cart-plus" aria-hidden="true"></i> Go to cart
+                        </a>
+                    </div>
+                    </form>
+
+                    <div class="title"><span>Share to</span></div>
+                    <div class="share-button m-b-3">
+                        <button type="button" class="btn btn-primary sharetofacebook"><i class="fa fa-facebook"></i></button>
+                        <button type="button" class="btn btn-info sharetotwitter"><i class="fa fa-twitter"></i></button>
+                        <button type="button" class="btn btn-danger sharetopin"><i class="fa fa-pinterest-p"></i></button>
+                        <button type="button" class="btn btn-primary sharetolinkdn"><i class="fa fa-linkedin"></i></button>
+                        <button type="button" class="btn btn-danger sharetogoogleplus"><i class="fa fa-google-plus"></i></button>
+                    </div>
+                </div>
+                                <!-- End Image List -->
+                <div class="col-sm-7 col-md-7">
+                    <div class="title-detail pr-at-full-nmae">
+                        LAKME 9 TO 5 NATURALE NIGHT CREAM 50GM                    </div>
+                    <div class="rating rt-at-fp ratingat-full-p">
+                        <div class="product_single_rating drt" data-star="0">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <a href="#" class="reciewtesta">
+                            0 Reviews
+                        </a>
+                    </div>
+                    <table class="table table-detail" id="product_master_info">
+                        <tbody>
+                        <tr>
+                            <td>Price</td>
+                            <td>
+                                <div class="price setprice-left bigprice">
+                                                                            <div>₹284</div>
+                                        <span class="price-old"> ₹300 </span>
+                                                                    </div>
+                            </td>
+                        </tr>
+
+                                                    <tr>
+                                <td>Highlights</td>
+                                <td>
+                                    <ul class="a-unordered-list a-vertical a-spacing-none">
+<li><span class="a-list-item">Enriched with the goodness of pure aloe vera</span></li>
+<li><span class="a-list-item">Wake up to bright looking skin</span></li>
+<li><span class="a-list-item">Nourishing cream that absorbs easily into your skin</span></li>
+<li><span class="a-list-item">It helps repair pollution induced dryness and dullness</span></li>
+<li><span class="a-list-item">Helps strengthen skin's natural defenses through the night</span></li>
+<li><span class="a-list-item">Skin is nourished and naturally bright every morning</span></li>
+</ul>                                </td>
+                                                            </tr>
+                                                <tr>
+                            <td>Delivery charge</td>
+                                                            <td>
+                                    Free
+                                </td>
+                                                        <form action="http://www.remedio.in/Home/addtocart" method="post" accept-charset="utf-8">
+                        <input type="hidden" name="hidden" value="61">
+                        <input type="hidden" name="url" value=product/lakme-9-to-5-naturale-night-cream-50gm/61>
+                                                <tr>
+                                                            
+                            <input type="hidden" id="cart_size" value="">
+                            <td colspan="2" id="add_product" style="display:;">
+
+                            </td>
+                            <td colspan="2" id="gotocart" style="display:none;">
+                                <a type="button" href="http://www.remedio.in/Home/checkout" name="addtocart"  class="btn btn-theme m-b-1 addtocart-function " value="Go to Cart">
+                                    Go to cart
+                                </a>
+                            </td>
+
+                        </tr>
+                        </tbody>
+                    </table>
+                    </form>                    <div class="col-md-12  col-sm-12 no-pading">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs prod_full_des">
+                            <li class="description_in active"><a href="javascript:void(0)">Description</a></li>
+                        </ul>
+                        <!-- End Nav tabs -->
+                        <!-- Tab panes -->
+                        <div class="tab-content tab-content-detail pr_tb_cnt">
+                            <div role="tabpanel" class="tab-pane active" id="desc" style="display:;">
+                                <div class="well">
+                                    <p>
+                                        <p>Apply the night creme at bedtime on a cleansed face and neck, gently massage in circular movements starting from the centre to the contours of your face.&nbsp;</p>                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content tab-content-detail pr_tb_cnt">
+                            <ul class="nav nav-tabs prod_full_des">
+                                <li class="rivewList active"><a href="javascript:void(0)">Reviews (0)</a></li>
+                            </ul>
+                            <div class="" id="review" style="">
+                                <div class="image_spinner_on review_spiiner_c" style="display: none;">
+                                    <img src="https://loading.io/spinners/spinner/index.ajax-spinner-preloader.gif" class="imagespiiner">
+                                </div>
+                                <div class="well wellreview">
+                                                                        <hr/>
+                                                                    </div>
+                            </div>
+                            <!-- End Review Tab Content -->
+                        </div>
+                        <!-- End Tab panes -->
+                    </div>
+                </div>
+                <!-- Filter Sidebar -->
+                <!-- End Filter Sidebar -->
+            </div>
+        </div>
+    </div>
+    <div class="row">
+    </div>
+</div>
+<!-- End Main Content -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="produc_flip_banner">
+                                            <div class="produc_flip_banner_dub_heading">
+                            <span class="produc_flip_banner_sapnh">Related Products</span>
+                        </div>
+                        <div class="product-slider owl-carousel owl-theme owl-controls-top-offset">
+                                                            <div class="box-product-outer">
+                                    <div class="box-product">
+                                        <div class="img-wrapper">
+                                            <a href=" http://www.remedio.in/product/himalaya-sunscreen-lotion/11">
+                                                <img height="240" width="600" alt="Product"
+                                                     src="http://www.remedio.in/assets/w_products/6799himalaya-100-15-protective-sunscreen-lotion-original-imae77wyn6ejwm7m.jpeg">
+                                            </a>
+                                            <div class="tags">
+                                            </div>
+                                        </div>
+                                        <h6><a href="http://www.remedio.in/product/himalaya-sunscreen-lotion/11">Himalaya Sunscreen Lotion</a></h6>
+                                        <div class="price">
+                                            <ul class="single_pr_info">
+                                                                                                    <li><strong style="font-size: 16px;">₹135</strong></li>
+                                                    <li><span class="price_old" style="text-decoration: line-through; font-size: 16px;">₹150</span></li>
+                                                                                                <li><span>0</span> <i class="fa fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="box-product-outer">
+                                    <div class="box-product">
+                                        <div class="img-wrapper">
+                                            <a href=" http://www.remedio.in/product/sebolin-cream/40">
+                                                <img height="240" width="600" alt="Product"
+                                                     src="http://www.remedio.in/assets/w_products/8257download (7).jpg">
+                                            </a>
+                                            <div class="tags">
+                                            </div>
+                                        </div>
+                                        <h6><a href="http://www.remedio.in/product/sebolin-cream/40">Sebolin cream</a></h6>
+                                        <div class="price">
+                                            <ul class="single_pr_info">
+                                                                                                    <li><strong style="font-size: 16px;">₹22</strong></li>
+                                                    <li><span class="price_old" style="text-decoration: line-through; font-size: 16px;">₹24</span></li>
+                                                                                                <li><span>0</span> <i class="fa fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="box-product-outer">
+                                    <div class="box-product">
+                                        <div class="img-wrapper">
+                                            <a href=" http://www.remedio.in/product/lakme-9-to-5-natural-aloe-aqua-gel-50g/48">
+                                                <img height="240" width="600" alt="Product"
+                                                     src="http://www.remedio.in/assets/w_products/897451fgcxP0I7L._SL1000_.jpg">
+                                            </a>
+                                            <div class="tags">
+                                            </div>
+                                        </div>
+                                        <h6><a href="http://www.remedio.in/product/lakme-9-to-5-natural-aloe-aqua-gel-50g/48">LAKME 9 TO 5 NATURAL ALOE AQUA GEL 50G</a></h6>
+                                        <div class="price">
+                                            <ul class="single_pr_info">
+                                                                                                    <li><strong style="font-size: 16px;">₹190</strong></li>
+                                                    <li><span class="price_old" style="text-decoration: line-through; font-size: 16px;">₹200</span></li>
+                                                                                                <li><span>0</span> <i class="fa fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="box-product-outer">
+                                    <div class="box-product">
+                                        <div class="img-wrapper">
+                                            <a href=" http://www.remedio.in/product/lakme-9-to-5-natural-day-creme-spf20-50g/51">
+                                                <img height="240" width="600" alt="Product"
+                                                     src="http://www.remedio.in/assets/w_products/72881.jpeg">
+                                            </a>
+                                            <div class="tags">
+                                            </div>
+                                        </div>
+                                        <h6><a href="http://www.remedio.in/product/lakme-9-to-5-natural-day-creme-spf20-50g/51">LAKME 9 TO 5 NATURAL DAY CREME SPF20 50G</a></h6>
+                                        <div class="price">
+                                            <ul class="single_pr_info">
+                                                                                                    <li><strong style="font-size: 16px;">₹284</strong></li>
+                                                    <li><span class="price_old" style="text-decoration: line-through; font-size: 16px;">₹300</span></li>
+                                                                                                <li><span>0</span> <i class="fa fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="box-product-outer">
+                                    <div class="box-product">
+                                        <div class="img-wrapper">
+                                            <a href=" http://www.remedio.in/product/lakme-9-to-5-naturale-cc-cream-honeyy/64">
+                                                <img height="240" width="600" alt="Product"
+                                                     src="http://www.remedio.in/assets/w_products/24797.jpg">
+                                            </a>
+                                            <div class="tags">
+                                            </div>
+                                        </div>
+                                        <h6><a href="http://www.remedio.in/product/lakme-9-to-5-naturale-cc-cream-honeyy/64">LAKME 9 TO 5 NATURALE CC CREAM HONEYY</a></h6>
+                                        <div class="price">
+                                            <ul class="single_pr_info">
+                                                                                                    <li><strong style="font-size: 16px;">₹333</strong></li>
+                                                    <li><span class="price_old" style="text-decoration: line-through; font-size: 16px;">₹350</span></li>
+                                                                                                <li><span>0</span> <i class="fa fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="box-product-outer">
+                                    <div class="box-product">
+                                        <div class="img-wrapper">
+                                            <a href=" http://www.remedio.in/product/lakme-9-to-5-naturale-cc-cream-honeyy/65">
+                                                <img height="240" width="600" alt="Product"
+                                                     src="http://www.remedio.in/assets/w_products/60337.jpg">
+                                            </a>
+                                            <div class="tags">
+                                            </div>
+                                        </div>
+                                        <h6><a href="http://www.remedio.in/product/lakme-9-to-5-naturale-cc-cream-honeyy/65">LAKME 9 TO 5 NATURALE CC CREAM HONEYY</a></h6>
+                                        <div class="price">
+                                            <ul class="single_pr_info">
+                                                                                                    <li><strong style="font-size: 16px;">₹333</strong></li>
+                                                    <li><span class="price_old" style="text-decoration: line-through; font-size: 16px;">₹350</span></li>
+                                                                                                <li><span>0</span> <i class="fa fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="box-product-outer">
+                                    <div class="box-product">
+                                        <div class="img-wrapper">
+                                            <a href=" http://www.remedio.in/product/lakme-9-to-5-naturale-cc-cream-bronze/66">
+                                                <img height="240" width="600" alt="Product"
+                                                     src="http://www.remedio.in/assets/w_products/46698.jpg">
+                                            </a>
+                                            <div class="tags">
+                                            </div>
+                                        </div>
+                                        <h6><a href="http://www.remedio.in/product/lakme-9-to-5-naturale-cc-cream-bronze/66">LAKME 9 TO 5 NATURALE CC CREAM BRONZE</a></h6>
+                                        <div class="price">
+                                            <ul class="single_pr_info">
+                                                                                                    <li><strong style="font-size: 16px;">₹333</strong></li>
+                                                    <li><span class="price_old" style="text-decoration: line-through; font-size: 16px;">₹350</span></li>
+                                                                                                <li><span>0</span> <i class="fa fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="box-product-outer">
+                                    <div class="box-product">
+                                        <div class="img-wrapper">
+                                            <a href=" http://www.remedio.in/product/lakme-9-to-5-naturale-finishing-powder-8gm/68">
+                                                <img height="240" width="600" alt="Product"
+                                                     src="http://www.remedio.in/assets/w_products/515561ZsgKgMl-L._AC_UL115_.jpg">
+                                            </a>
+                                            <div class="tags">
+                                            </div>
+                                        </div>
+                                        <h6><a href="http://www.remedio.in/product/lakme-9-to-5-naturale-finishing-powder-8gm/68">LAKME 9 TO 5 NATURALE FINISHING POWDER 8GM</a></h6>
+                                        <div class="price">
+                                            <ul class="single_pr_info">
+                                                                                                    <li><strong style="font-size: 16px;">₹523</strong></li>
+                                                    <li><span class="price_old" style="text-decoration: line-through; font-size: 16px;">₹550</span></li>
+                                                                                                <li><span>0</span> <i class="fa fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="box-product-outer">
+                                    <div class="box-product">
+                                        <div class="img-wrapper">
+                                            <a href=" http://www.remedio.in/product/pond's-age-miracle-cell-regenerating-facial-foam,-100g/70">
+                                                <img height="240" width="600" alt="Product"
+                                                     src="http://www.remedio.in/assets/w_products/924141YHpM6Vb3L.jpg">
+                                            </a>
+                                            <div class="tags">
+                                            </div>
+                                        </div>
+                                        <h6><a href="http://www.remedio.in/product/pond's-age-miracle-cell-regenerating-facial-foam,-100g/70">POND'S Age Miracle Cell Regenerating Facial Foam, 100g</a></h6>
+                                        <div class="price">
+                                            <ul class="single_pr_info">
+                                                                                                    <li><strong style="font-size: 16px;">₹283</strong></li>
+                                                    <li><span class="price_old" style="text-decoration: line-through; font-size: 16px;">₹299</span></li>
+                                                                                                <li><span>0</span> <i class="fa fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="box-product-outer">
+                                    <div class="box-product">
+                                        <div class="img-wrapper">
+                                            <a href=" http://www.remedio.in/product/lakme-9-to-5-naturale-foundation-drops-18-ml/71">
+                                                <img height="240" width="600" alt="Product"
+                                                     src="http://www.remedio.in/assets/w_products/331451FBZYejTKL._SL1000_.jpg">
+                                            </a>
+                                            <div class="tags">
+                                            </div>
+                                        </div>
+                                        <h6><a href="http://www.remedio.in/product/lakme-9-to-5-naturale-foundation-drops-18-ml/71">LAKME 9 TO 5 NATURALE FOUNDATION DROPS 18 ML</a></h6>
+                                        <div class="price">
+                                            <ul class="single_pr_info">
+                                                                                                    <li><strong style="font-size: 16px;">₹523</strong></li>
+                                                    <li><span class="price_old" style="text-decoration: line-through; font-size: 16px;">₹550</span></li>
+                                                                                                <li><span>0</span> <i class="fa fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="box-product-outer">
+                                    <div class="box-product">
+                                        <div class="img-wrapper">
+                                            <a href=" http://www.remedio.in/product/pond's-white-beauty-daily-spotless-lightening-face-wash,-200g/72">
+                                                <img height="240" width="600" alt="Product"
+                                                     src="http://www.remedio.in/assets/w_products/985961T0u1ndkLL._SL1000_.jpg">
+                                            </a>
+                                            <div class="tags">
+                                            </div>
+                                        </div>
+                                        <h6><a href="http://www.remedio.in/product/pond's-white-beauty-daily-spotless-lightening-face-wash,-200g/72">Pond's White Beauty Daily Spotless Lightening Face Wash, 200g</a></h6>
+                                        <div class="price">
+                                            <ul class="single_pr_info">
+                                                                                                    <li><strong style="font-size: 16px;">₹234</strong></li>
+                                                    <li><span class="price_old" style="text-decoration: line-through; font-size: 16px;">₹245</span></li>
+                                                                                                <li><span>0</span> <i class="fa fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="box-product-outer">
+                                    <div class="box-product">
+                                        <div class="img-wrapper">
+                                            <a href=" http://www.remedio.in/product/lakme-9-to-5-naturale-balm-compact-9gm/75">
+                                                <img height="240" width="600" alt="Product"
+                                                     src="http://www.remedio.in/assets/w_products/6630517rn0iWo9L._SX679_.jpg">
+                                            </a>
+                                            <div class="tags">
+                                            </div>
+                                        </div>
+                                        <h6><a href="http://www.remedio.in/product/lakme-9-to-5-naturale-balm-compact-9gm/75">LAKME 9 TO 5 NATURALE BALM COMPACT 9GM</a></h6>
+                                        <div class="price">
+                                            <ul class="single_pr_info">
+                                                                                                    <li><strong style="font-size: 16px;">₹570</strong></li>
+                                                    <li><span class="price_old" style="text-decoration: line-through; font-size: 16px;">₹600</span></li>
+                                                                                                <li><span>0</span> <i class="fa fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="box-product-outer">
+                                    <div class="box-product">
+                                        <div class="img-wrapper">
+                                            <a href=" http://www.remedio.in/product/pond's-pure-white-anti-pollution-with-activated-charcoal-facewash,-100g/76">
+                                                <img height="240" width="600" alt="Product"
+                                                     src="http://www.remedio.in/assets/w_products/956861nSPnYo6IL._SL1000_.jpg">
+                                            </a>
+                                            <div class="tags">
+                                            </div>
+                                        </div>
+                                        <h6><a href="http://www.remedio.in/product/pond's-pure-white-anti-pollution-with-activated-charcoal-facewash,-100g/76">Pond's Pure White Anti Pollution With Activated Charcoal Facewash, 100g</a></h6>
+                                        <div class="price">
+                                            <ul class="single_pr_info">
+                                                                                                    <li><strong style="font-size: 16px;">₹171</strong></li>
+                                                    <li><span class="price_old" style="text-decoration: line-through; font-size: 16px;">₹180</span></li>
+                                                                                                <li><span>0</span> <i class="fa fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="box-product-outer">
+                                    <div class="box-product">
+                                        <div class="img-wrapper">
+                                            <a href=" http://www.remedio.in/product/lakme-9-to-5-flawless-matte-complexion-compact-9gm/77">
+                                                <img height="240" width="600" alt="Product"
+                                                     src="http://www.remedio.in/assets/w_products/5898fec76980-df4e-4b75-9c46-d4ac0f45a0ff._SL300__.jpg">
+                                            </a>
+                                            <div class="tags">
+                                            </div>
+                                        </div>
+                                        <h6><a href="http://www.remedio.in/product/lakme-9-to-5-flawless-matte-complexion-compact-9gm/77">LAKME 9 TO 5 FLAWLESS MATTE COMPLEXION COMPACT 9GM</a></h6>
+                                        <div class="price">
+                                            <ul class="single_pr_info">
+                                                                                                    <li><strong style="font-size: 16px;">₹428</strong></li>
+                                                    <li><span class="price_old" style="text-decoration: line-through; font-size: 16px;">₹450</span></li>
+                                                                                                <li><span>0</span> <i class="fa fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="box-product-outer">
+                                    <div class="box-product">
+                                        <div class="img-wrapper">
+                                            <a href=" http://www.remedio.in/product/lakme-9-to-5-primer-+-matte-powder-foundation-/82">
+                                                <img height="240" width="600" alt="Product"
+                                                     src="http://www.remedio.in/assets/w_products/8286LAKME 9 TO 5 PRIMER+MATTE FOUNDATION 9GM 1.jpg">
+                                            </a>
+                                            <div class="tags">
+                                            </div>
+                                        </div>
+                                        <h6><a href="http://www.remedio.in/product/lakme-9-to-5-primer-+-matte-powder-foundation-/82">LAKME 9 TO 5 PRIMER + MATTE POWDER FOUNDATION </a></h6>
+                                        <div class="price">
+                                            <ul class="single_pr_info">
+                                                                                                    <li><strong style="font-size: 16px;">₹540</strong></li>
+                                                    <li><span class="price_old" style="text-decoration: line-through; font-size: 16px;">₹600</span></li>
+                                                                                                <li><span>0</span> <i class="fa fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                                        </div>
+                                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- The Modal -->
+<div class="modal" id="reviewmodel">
+    <div class="modal-dialog " style="border: 5px solid #225aa7;border-radius: 5px;">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h3 class="modal-title text-center">Please share your experience</h3>
+                <button type="button" class="close" data-dismiss="modal" style="margin-top: -22px;">&times;</button>
+            </div>
+
+            <div class="modal-body">
+                <div class="reviewsections" id="user_reviews_op">
+                    <h4 class="m-b-2"></h4>
+                    <form id="submitreview" role="form">
+                        <div class="form-group">
+                            <label>Rating</label>
+                            <div class="clearfix"></div>
+                            <div class="input-rating"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="Review">Your Review</label>
+                            <textarea id="Review" class="form-control" name="review" rows="4" placeholder="Your Review" style="height: auto !important;"></textarea>
+                            <input type="hidden" id="product_id" value="61">
+                            <input type="hidden" id="user_id" value="">
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-theme ">Submit Review</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ******** product buy ********* -->
+
+<!-- ******** no product buy ********* -->
+<div class="modal" id="reviewmodelcancel">
+    <div class="modal-dialog " style="border: 5px solid #225aa7;border-radius: 5px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title text-center"> Product not purchased ! </h3>
+                <button type="button" class="close" data-dismiss="modal" style="margin-top: -22px;">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="text-center">
+                    <img src="http://www.remedio.in/public/img/five-stars.png" width="200">
+                    <br>
+                    <span class="revsty">Please purchase the product to review.  </span>
+
+                </div>
+            </div>
+            <!-- ******** no product buy ********* -->
+
+
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function()
+    {
+        $('.atcartc').hide();
+        var pid = $(".productid").val();
+        $.ajax({
+            type: "post",
+            url: "http://www.remedio.in/Home/guest_user",
+            data: {
+                'productid': pid
+            },
+            success: function(data) {
+            }
+        });
+
+        var pid = $(".productid").val();
+        $.ajax({
+            type: "post",
+            url: "http://www.remedio.in/Home/checkproductincart",
+            data: {
+                'pid': pid
+            },
+            success: function(data) {
+                if (data == 1) {
+                    console.log(data);
+                    $(".goto").css('display','');
+                    $(".addto").css('display','none');
+                }  else {
+                    console.log(data);
+                    $(".goto").css('display','none');
+                    $(".addto").css('display','');
+                }
+            }
+        });
+        $(document).on('click', ".checkreview", function() {
+            var pid = $(".productid").val();
+            $.ajax({
+                type: "post",
+                url: "http://www.remedio.in/Home/checkuserbuyproduct",
+                data: {
+                    'pid': pid
+                },
+                success: function(data) {
+                    var result = JSON.parse(data);
+                    if (result.error == false) {
+                        console.log("success");
+                        $("#reviewmodel").modal('show');
+                    } else {
+                        console.log("Failed");
+                        $("#reviewmodelcancel").modal('show');
+                    }
+                }
+            });
+        });
+
+// $(".sizeactive").click(function(){
+// $(".sizeactive_div span").removeClass('sizeactivein');
+// $(this).addClass('sizeactivein');
+// var s = $(this).text();
+// $('#sizechart').val(s);
+// $.ajax({
+// type: "post",
+//url: "//Home/checkcartproductsize",
+// data: {
+// 's': s,'pid':pid
+// },
+// success: function(data) {
+// datas = JSON.parse(data);
+// if(datas.redirect == 1)
+// {
+//document.location.href="//Home/login";
+// }
+// else if(datas.false == 0)
+// {
+// $('.gtcart').show();
+// $('.atcart').hide();
+// $('.atcartc').hide();
+// }
+// else
+// {
+// $('.atcartc').show();
+// $('.atcart').hide();
+// $('.gtcart').hide();
+// }
+// }
+// });
+// });
+    });
+</script>
+<script>
+    function myFunction(imgs) {
+        var expandImg = document.getElementById("expandedImg");
+        expandImg.src = imgs.src;
+    }
+</script><div class="footer">
+
+    <div id="mySidenav" class="sidenav hideshowmedamynav">
+        <a id="facebookshare" class="sharetofacebookda" href="#"><i class="fa fa-facebook fasty"></i><span
+                    class="gddckzm "> Share on Facebook</span></a>
+        <a href="#" class="sharetotwitterda" id="twitter"><i class="fa fa-twitter fasty"></i><span class="gddckzm "> Share on Twitter</span></a>
+        <a href="#" class="sharetogoogleplusda" id="googleplus"><i class="fa fa-google-plus fasty"></i><span
+                    class="gddckzm "> Share on Google +</span></a>
+        <a href="#" class="sharetolinkdnda" id="linkedin"><i class="fa fa-linkedin fasty"></i><span class="gddckzm "> Share on Linkedin</span></a>
+        <a href="#" class="sharetopinda" id="pinterest"><i class="fa fa fa-pinterest-p fasty"></i><span
+                    class="gddckzm "> Share on Pinterest</span></a>
+
+    </div>
+    <div id="sharemobilenave" class="sharemobilenave">
+        <a id="sharemobile" class="sharemobile"><i class="fa fa-share-alt fasty fastynew" id="fastynew"></i></a>
+    </div>
+
+    <div class="container padd-con">
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="title-footer"><span> INFORMATION</span></div>
+                <ul>
+                    <li><a href="http://www.remedio.in/Home/about">About Us</a></li>
+                    <li><a href="http://www.remedio.in/Home/myprofile" class="suportprofile">Customer Service</a></li>
+                    <li><a href="http://www.remedio.in/Home/privacypolicy">Privacy Policy</a></li>
+                    <li><a href="http://www.remedio.in/Home/sitemap">Site Map</a></li>
+                    <li><a href="http://www.remedio.in/Home/contactus">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- <div class="clearfix visible-sm-block"></div> -->
+                                <div class="col-md-4 col-sm-6">
+                        <div class="title-footer"><span class="text-center">  FOLLOW US</span></div>
+                        <ul class="follow-us">
+                                                            <li><a href="admin" class="facebk"><i
+                                                class="fa fa-facebook"></i></a></li>
+                                                                                            <li><a href="admin" class="twit"><i
+                                                class="fa fa-twitter"></i></a></li>
+                                <!--                    <li><a href="#" class="gopul"><i class="fa fa-google-plus"></i></a></li>-->
+                                <br>      <br>      <br>
+                                                                                                                                            </ul>
+                    </div>
+                                <div class="col-md-4 col-sm-12">
+                <div class="title-footer"><span> CONTACT</span></div>
+                <ul>
+                    <li><a href="http://www.remedio.in/Home/contactus">Remedio Pharmaceuticals <br>
+                            2nd Floor,Kuriland Tower, Marar Road, <br>
+                            Thrissur 680001 </a></li>
+                    <li><span style="color: #383838;font-size: 15px;font-weight: 500;"> Phone : </span><a
+                                href="tel:6282286867"> +91 6282286867</a></li>
+                    <li><span style="color: #383838;font-size: 15px;font-weight: 500;"> Email :</span> <a
+                                href="mailto:info@remedio.in">info@remedio.in</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+        <div class="row">
+
+            <div class="clearfix visible-sm-block"></div>
+            <div class="col-md-12 col-sm-12 text-center bor-top-foot">
+                <div class="title-footer pay-sty"><span>  PAYMENT METHOD</span></div>
+                <img src="http://www.remedio.in/public/user/images/payment-1.png" alt="Payment-1">
+                <img src="http://www.remedio.in/public/user/images/payment-2.png" alt="Payment-2">
+                <img src="http://www.remedio.in/public/user/images/payment-3.png" alt="Payment-3">
+                <img src="http://www.remedio.in/public/user/images/payment-4.png" alt="Payment-4">
+                <img src="http://www.remedio.in/public/user/images/payment-5.png" alt="Payment-5">
+                <div class=" pay-sty" style="color: gray;"><span>  ( Coming Soon )</span></div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center copyright">
+        Copyright &copy; 2018 Remedio Pharmaceuticals All right reserved | Designed by <a href="http://www.atees.in"
+                                                                                          target="_blank">ATEES</a>
+    </div>
+</div>
+
+<div class="mobfooter" style="display: none;">
+    <div class="container-fluid">
+        <div class="row">
+            <div>
+                <div class="col-sm-6 col-xs-6 " style="padding: 10px 0px 10px 5px;width: 50% !important;">
+                    <div class="emailtext"><a href="mailto:info@remedio.in" target="_blank" style="color: #337ab7;"> <i
+                                    class="fa fa-envelope "></i> info@remedio.in </a></div>
+                </div>
+                <div class="col-sm-6 col-xs-6"
+                     style="padding: 10px 0px 10px 0px;text-align: center;width: 50% !important;"><span
+                            class="callustext"><a href="tel:6282286867" target="_blank" style="color: #fff;"> <i
+                                    class="fa  fa-phone"></i> Call Now</a></span></div>
+                <!-- <div class="col-sm-4 col-xs-4">hi</div> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<a href="javascript:void(0)" class="back-top text-center">
+    <i class="fa fa-angle-double-up"></i>
+</a>
+
+<!-- <div class="chooser chooser-hide">
+    <div class="chooser-toggle">
+        <button class="btn btn-warning ww-olot_Ff17" type="button"><i class="fa fa-commenting-o bigger-130"></i></button>
+    </div>
+    <div class="chooser-content">
+        chat
+    </div>
+</div> -->
+<!-- Modal -->
+<div class="modal" id="loginorregisetr" role="dialog">
+    <div class="modal-dialog login_dookk">
+        <div class="modal-content md-lofin">
+            <button type="button" class="close boot-model-register" onclick="wanttoregister(event)"
+                    data-dismiss="modal">&times;
+            </button>
+            <div class="modal-body md-body-log no-pb"
+                 style="background-image: url(http://www.remedio.in/public/img/img-login.png);background-position: center;background-size: cover;">
+                <div class="image_spinner_on" style="display: none;">
+                    <img src="https://loading.io/spinners/spinner/index.ajax-spinner-preloader.gif"
+                         class="imagespiiner">
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 no-pading">
+                        <div class="form-login-eg disnone_img">
+                            <img src="http://www.remedio.in/public/img/regi1.jpg" ng-class="img-responsive"
+                                 width="100%" style="margin-top: -15px;">
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-8">
+                        <div class="form-login-eg margin-t30" id="loginandregister">
+                            <form onsubmit="otpregister(event)" id="otpregister">
+                                <div class="form-group" id="removeeEMN">
+                                    <label for="emn">Enter Mobile no *</label>
+                                    <input type="text" class="form-control" id="entermobno" autofocus>
+                                    <span class="_ind_cod ">+91</span>
+                                    <a class="recent-otp" id="editnumbera" style="display:none;"
+                                       href="javascript:void(0)"     onclick="editnumber(event);">Edit number</a>
+                                </div>
+                                <div class="form-group btnregister">
+                                    <button type="submit" class="register-login registerinbox" id="continuew">Continue
+                                    </button>
+                                    <button type="submit" class="register-login registerinbox"
+                                            onclick="validateotp(event)" id="registernow" style="display:none">Register
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="frgtpas" style="display: none;">
+                            <div class="form-group" id="removeeEMN">
+                                <label for="emn">Enter Mobile no *:</label>
+                                <input disabled type="number" value="" class="form-control" id="entermobno"
+                                       autofocus="">
+                                <span class="_ind_cod">+91</span>
+                                <a class="recent-otp" id="editnumberasqr" href="javascript:void(0)"
+                                   onclick="wanttoregister(event)">Edit number</a>
+                            </div>
+                            <div class="form-group" id="removeeFDRE">
+                                <label for="emn">Enter OTP:</label><input type="number" class="form-control"
+                                                                          id="enterotpfr">
+                                <a class="recent-otp" id="resendotp" href="javascript:void(0)"
+                                   onclick="otpregisterFRGT(event)">Resend OTP</a>
+                            </div>
+                            <div class="form-group" id="removeeDFER">
+                                <label for="emn">Enter New Password:</label>
+                                <input type="password" autocomplete="off" class="form-control" id="enterpaswordfrgt">
+                                <button type="submit" class="register-login registerbox" id="forgotupdate">Login
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<input type="hidden" name="base" value="http://www.remedio.in/" id="baseurls">
+<script src="http://www.remedio.in/public/user/bootstrap/js/bootstrap.js"></script>
+<script src="http://www.remedio.in/public/user/js/bootstrap-select.js"></script>
+<script src="http://www.remedio.in/public/user/js/jquery.ez-plus.js"></script>
+<script src="http://www.remedio.in/public/user/js/jquery.raty-fa.js"></script>
+<script src="http://www.remedio.in/public/user/js/owl.carousel.js"></script>
+<script src="http://www.remedio.in/public/user/js/bootstrap3-typeahead.js"></script>
+<script src="http://www.remedio.in/public/user/js/bootstrap-toolkit.js"></script>
+<!-- <script src="http://www.remedio.in/public/user/js/jquery.bootstrap-touchspin.js"></script> -->
+<script src="http://www.remedio.in/public/user/js/mimity.js"></script>
+<script src="http://www.remedio.in/public/user/js/mimity.detail.js"></script>
+<script src="http://www.remedio.in/public/js/wowrep.js"></script>
+<script src="http://www.remedio.in/public/release/pagination.full.min.js"></script>
+<!-- snow xams -->
+<!-- <script src="http://www.remedio.in/public/js/snowfall.jquery.js"></script>-->
+<script type="text/javascript">
+    $(".owl-next").html("<i class='fa fa-angle-right'></i>");
+    $(".owl-prev").html("<i class='fa fa-angle-left'></i>");
+</script>
+<div id="snackbar">Tost activated</div>
+<div class="image_spinner_on_main" style="display: none;">
+    <img src="https://loading.io/spinners/spinner/index.ajax-spinner-preloader.gif" class="imagespiiner">
+</div>
+
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.4/jquery.lazy.min.js"></script>
+<script>
+    $(function () {
+        $('.lazy').lazy({
+            effect: "fadeIn",
+            effectTime: 2000,
+            threshold: 0
+        });
+    });
+</script>
+<script language="javascript" type="text/javascript">
+    $(window).load(function () {
+        $("#loading").fadeOut("slow");
+    });
+</script>
+
+<style type="text/css">
+    @media (max-width: 768px) {
+        .hideshowmedamynav {
+            display: none;
+        }
+
+        .footer {
+            margin-bottom: 40px !important;
+        }
+
+        .mobfooter {
+            display: block !important;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 99;
+            background-color: white;
+        }
+
+        .back-top {
+            bottom: 40px !important;
+        }
+
+        .callustext {
+            padding: 6px 12px;
+            font-size: 14px;
+            color: white;
+            border-radius: 8px;
+            background-color: #0259ac;
+        }
+
+        .emailtext {
+            text-align: center;
+            padding: 0px 12px;
+            font-size: 14px;
+            color: #0259ac;
+            border-radius: 8px;
+        }
+
+        #mySidenav a {
+            line-height: 1.4;
+            position: fixed;
+            right: -155px !important;
+            transition: 0.3s;
+            padding: 7px 0px 7px 2px !important;
+            width: 190px;
+            text-decoration: none;
+            font-size: 14px !important;
+            color: white;
+            border-radius: 5px 0px 0px 5px;
+            z-index: 99999;
+        }
+
+        i.fa.fastynew {
+            padding: 0px 8px 0px 8px !important;
+        }
+
+        #sharemobilenave a {
+            cursor: pointer;
+            line-height: 1.4;
+            position: fixed;
+            right: 0;
+            transition: 0.3s;
+            padding: 7px 0px 7px 0px !important;
+            /* width: 190px; */
+            text-decoration: none;
+            font-size: 14px !important;
+            color: white;
+            border-radius: 5px 0px 0px 5px;
+            z-index: 99999;
+        }
+
+        .whatsappda {
+            bottom: 75px !important;
+            background-color: #17a707 !important;
+            padding: 6px 13px !important;
+            font-size: 24px !important;
+        }
+
+        #sharemobile {
+            top: 265px;
+            display: block !important;
+            background-color: #225799 !important;
+        }
+
+        #twitter {
+            top: 125px !important;
+        }
+
+        #googleplus {
+            top: 160px !important;
+        }
+
+        #linkedin {
+            top: 195px !important;
+        }
+
+        #pinterest {
+            top: 230px !important;
+        }
+    }
+
+    #mySidenav a {
+        line-height: 1.4;
+        position: fixed;
+        right: -145px;
+        transition: 0.3s;
+        padding: 7px 0px 7px 8px;
+        width: 190px;
+        text-decoration: none;
+        font-size: 16px;
+        color: white;
+        border-radius: 5px 0px 0px 5px;
+        z-index: 99999;
+    }
+
+    #mySidenav a:hover {
+        right: 0 !important;
+    }
+
+    #sharemobile {
+        display: none;
+    }
+
+    #facebookshare {
+        top: 90px;
+        background-color: #39579A !important;
+    }
+
+    #twitter {
+        top: 130px;
+        background-color: #1DA8E2 !important;
+    }
+
+    #googleplus {
+        top: 170px;
+        background-color: #f44336 !important;
+    }
+
+    #linkedin {
+        top: 210px;
+        background-color: #337ab7 !important;
+    }
+
+    #pinterest {
+        top: 250px;
+        background-color: #d9534f !important;
+    }
+
+    i.fa.fasty {
+        padding: 0px 15px 0px 10px;
+    }
+</style>
+
+<script>
+    $('#sharemobilenave').click(function (event) {
+        $("#mySidenav").toggleClass("hideshowmedamynav");
+        $("#fastynew").toggleClass("fastynew");
+    });
+</script>
+
+<script>
+    var pageURL = $(location).attr("href");
+    $('.sharetogoogleplusda').click(function (e) {
+// $(".image_spinner_on_main").css('display', '');
+        window.location = ' https://plus.google.com/share?url=' + pageURL + '';
+    });
+    $('.sharetolinkdnda').click(function (e) {
+// $(".image_spinner_on_main").css('display', '');
+        window.location = 'https://www.linkedin.com/shareArticle?mini=true&url=' + pageURL + '/&title=&summary=&source=';
+    });
+    $('.sharetomailda').click(function (e) {
+// $(".image_spinner_on_main").css('display', '');
+        window.location = 'mailto:info@hotelbozz.com';
+    });
+    $('.sharetofacebookda').click(function (e) {
+// $(".image_spinner_on_main").css('display', '');
+        window.location = 'https://www.facebook.com/sharer/sharer.php?u=' + pageURL + '';
+    });
+    $('.sharetotwitterda').click(function (e) {
+// $(".image_spinner_on_main").css('display', '');
+        window.location = 'https://twitter.com/home?status=' + pageURL + '';
+    });
+    $('.sharetopinda').click(function (e) {
+// $(".image_spinner_on_main").css('display', '');
+        window.location = 'https://pinterest.com/pin/create/button/?url=&media=' + pageURL + '/&description=';
+    });
+</script>
+<!--<script >-->
+<!--    $(document).ready(function() {-->
+<!--        console.log('hiii');-->
+<!--        var showChar =10;-->
+<!--        var ellipsestext = "...";-->
+<!--        $(".morecontent").each(function() {-->
+<!--            console.log('hiiiiiii');-->
+<!--            var content = $(this).html();-->
+<!---->
+<!--            if(content.length > showChar) {-->
+<!--                var c = content.substr(0, showChar);-->
+<!--                var h = content.substr(showChar-1, content.length - showChar);-->
+<!---->
+<!--                var html = c + '<span class="moreellipses">' + ellipsestext + '&nbsp;</span><span class="morecontentother"><span>' + h + '</span>';-->
+<!---->
+<!--                $(this).html(html);-->
+<!--            }-->
+<!---->
+<!--        });-->
+<!--    });-->
+<!--</script>-->
+</body>
+</html>
