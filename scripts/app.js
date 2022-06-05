@@ -5,6 +5,9 @@ let isMenuActive = false;
 
 const navButtonLinks = document.querySelectorAll('.navigation li a');
 
+
+
+
 navButtonLinks.forEach(link => {
   link.addEventListener('click', () => {
     const navIconMenu = `<i class="bi bi-list"></i>`;
