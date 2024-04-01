@@ -289,4 +289,12 @@
     <!-- App Scripts -->
     <script src="scripts/app.js"></script>
   </body>
+  <script>
+    window.onscroll = function(ev) {
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+            // User has scrolled to the bottom
+            window.location.href = "https://manishtm.github.io/portfolio"; // Replace this with the URL you want to redirect to
+        }
+    };
+  </script>
 </html>
